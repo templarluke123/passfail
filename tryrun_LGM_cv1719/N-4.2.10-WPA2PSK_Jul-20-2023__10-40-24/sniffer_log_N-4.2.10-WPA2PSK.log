@@ -1,0 +1,31 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.10-WPA2PSK 
+
+
+Jul:20:2023-10:41:32 | SNIFFER ---> sniffer_get_info, 
+Jul:20:2023-10:41:33 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:20:2023-10:41:33 | SNIFFER ---> sniffer_control_start,filename,SnifferTrace_N-4.2.10-WPA2PSK,channel,6 
+Jul:20:2023-10:41:33 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-10:47:51 | SNIFFER ---> sniffer_control_stop, 
+Jul:20:2023-10:47:51 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-10:48:07 | SNIFFER ---> sniffer_control_start,filename,4.2.10_step8,channel,6 
+Jul:20:2023-10:48:16 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-10:49:17 | SNIFFER ---> sniffer_control_stop, 
+Jul:20:2023-10:49:17 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-10:49:17 | SNIFFER ---> sniffer_check_group_traffic,filename,4.2.10_step8,bssid,02:9a:96:f0:c2:31,Dtim_check,1,NoOfFrames,50 
+Jul:20:2023-10:49:43 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS,DTIM count decreasing monotonically 
+
+ 
+Jul:20:2023-10:49:43 | SNIFFER ---> sniffer_check_group_traffic,filename,4.2.10_step8,bssid,02:9a:96:f0:c2:31,Dtim_check,0,unicast_staMac,00:90:4c:0d:d1:85,NoOfFrames,10 
+Jul:20:2023-10:50:00 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS,Group Traffic analysis completed successfully 
+
+ 

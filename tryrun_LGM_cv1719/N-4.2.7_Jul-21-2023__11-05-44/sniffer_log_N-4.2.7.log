@@ -1,0 +1,27 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.7 
+
+
+Jul:21:2023-11:06:52 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-11:06:53 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:21:2023-11:08:13 | SNIFFER ---> sniffer_control_start,filename,4.2.7,bandwidth,20,channel,36 
+Jul:21:2023-11:08:13 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-11:10:06 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-11:10:06 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-11:10:06 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.7,srcMac,02:e0:92:00:01:41,destmac,00:50:43:24:b0:14,framename,eapolkey,wpaie,1 
+Jul:21:2023-11:10:31 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-11:10:31 | SNIFFER ---> sniffer_control_start,filename,SnifferTrace_N-4.2.7,channel,36 
+Jul:21:2023-11:10:31 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-11:17:03 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-11:17:03 | SNIFFER <-- status,COMPLETE
+
+ 

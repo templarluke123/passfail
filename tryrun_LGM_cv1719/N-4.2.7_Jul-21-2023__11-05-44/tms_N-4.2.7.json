@@ -1,0 +1,33 @@
+{
+    "TmsTestResult": {
+        "PrimaryTestbed": {
+            "Category": "STA", 
+            "VendorDeviceId": "Realtek_RTL8812BU", 
+            "company": "Realtek", 
+            "firmware": "10.9.1222.2016", 
+            "model": "RTL8812BU"
+        }, 
+        "TestResult": {
+            "Device": "DUT", 
+            "Message": "OK", 
+            "Result": "PASS"
+        }, 
+        "ExecutionTimeInSeconds": "0", 
+        "TimeStamp": "2023-07-21T11-17-03Z+08:00", 
+        "TmsEventId": "XXXXX", 
+        "LogFileName": "ftp://wfaftp.tms.wi-fi.org/XXXXX/MxL_WAV700_AP/Realtek_RTL8812BU/N-4.2.7/2023-07-21T11-17-03Z", 
+        "TestCaseId": "N-4.2.7", 
+        "Mode": "Sigma", 
+        "ProgramName": "N", 
+        "PrimaryTestbedParticipantName": "TestbedCompanyName", 
+        "Dut": {
+            "Category": "AP", 
+            "VendorDeviceId": "MxL_WAV700_AP", 
+            "company": "MxL", 
+            "firmware": "06.01.00.1716", 
+            "model": "WAV700_AP"
+        }, 
+        "TMSversion": "2.0", 
+        "DutParticipantName": "DUTCompanyName"
+    }
+}

@@ -1,0 +1,53 @@
+2023-07-24 10:05:25.138 - INFO - ###########################################################
+
+2023-07-24 10:05:25.138 - INFO - WiFiTestSuite Version [10.20.3]
+2023-07-24 10:05:25.138 - INFO - Logging started in file - ./log/N-4.2.35_3SS_Jul-24-2023__10-05-25/log_N-4.2.35_3SS.log
+2023-07-24 10:05:25.140 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:05:25.140 - INFO - Test Info
+2023-07-24 10:05:25.141 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:05:25.141 - INFO - Test Prog Name    : N
+2023-07-24 10:05:25.141 - INFO - Test ID           : N-4.2.35_3SS
+2023-07-24 10:05:25.141 - INFO - Test Usermode     : precert 
+2023-07-24 10:05:25.141 - INFO - Test CmdPath      : ..\cmds\WTS-11n
+2023-07-24 10:05:25.141 - INFO - Test InitFile     : AllInitConfig_N.txt
+2023-07-24 10:05:25.142 - INFO - Test TB File      : \802.11n-Testbed-APs.txt
+2023-07-24 10:05:25.144 - INFO - Test Start Time   : 2023-07-24 10:05:25
+2023-07-24 10:05:25.144 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:05:25.144 - INFO - Initializing FTP server
+2023-07-24 10:05:25.145 - INFO - FTP server path: C:\Wi-FiTestSuite_20.3\bin\log\N-4.2.35_3SS_Jul-24-2023__10-05-25
+2023-07-24 10:05:25.148 - INFO - Starting FTP server on 0.0.0.0:2128
+2023-07-24 10:05:25.648 - INFO - ---------------------------------------
+2023-07-24 10:05:25.650 - INFO - Processing DUTInfo.txt file....
+2023-07-24 10:05:25.651 - INFO - ---------------------------------------
+
+2023-07-24 10:05:25.678 - INFO - Processing MasterTestInfo.xml file....
+2023-07-24 10:05:25.680 - INFO - ---------------------------------------
+
+2023-07-24 10:05:25.823 - INFO - Testplan version=WTS-11n-Testplan-v2.21
+2023-07-24 10:05:25.846 - INFO - 
+         Testcase Init File = AllInitConfig_N.txt 
+
+2023-07-24 10:05:25.848 - INFO - Processing AllInitConfig_N.txt file....
+2023-07-24 10:05:25.848 - INFO - ---------------------------------------
+
+2023-07-24 10:05:25.930 - INFO - stream1 2081 Frames / second
+2023-07-24 10:05:25.931 - INFO - stream2 1856 Frames / second
+2023-07-24 10:05:25.933 - INFO - stream3 1856 Frames / second
+2023-07-24 10:05:25.934 - INFO - stream_trans 281 Frames / second
+2023-07-24 10:05:25.937 - INFO - Processing AllInitCommand_N.txt file....
+2023-07-24 10:05:25.937 - INFO - ---------------------------------------
+
+2023-07-24 10:05:26.058 - INFO - 
+         Testcase Command File = N-4.2.35.txt 
+
+2023-07-24 10:05:26.059 - INFO - START: TEST CASE [N-4.2.35.txt] 
+2023-07-24 10:05:26.059 - INFO - Processing N-4.2.35.txt file....
+2023-07-24 10:05:26.061 - INFO - ---------------------------------------
+
+2023-07-24 10:05:27.224 - ERROR - TCP client socket error - [Errno 10061] No connection could be made because the target machine actively refused it
+2023-07-24 10:05:27.226 - ERROR - Error connecting to 127.0.0.1:8800
+2023-07-24 10:05:27.229 - INFO - =============================================
+2023-07-24 10:05:27.230 - INFO - Please check AP config agent is running.
+2023-07-24 10:05:27.233 - INFO - END: TEST CASE [N-4.2.35_3SS] 
+2023-07-24 10:05:27.233 - INFO - Execution Time [2.25] seconds
+2023-07-24 10:05:27.236 - INFO - Stopping FTP server

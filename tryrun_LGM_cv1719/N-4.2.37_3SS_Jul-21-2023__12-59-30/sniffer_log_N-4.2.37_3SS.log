@@ -1,0 +1,7 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.37_3SS 
+
+
+Jul:21:2023-13:00:41 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-13:00:42 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 

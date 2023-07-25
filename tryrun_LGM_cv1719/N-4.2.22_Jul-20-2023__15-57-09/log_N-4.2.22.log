@@ -1,0 +1,1261 @@
+2023-07-20 15:57:09.276 - INFO - ###########################################################
+
+2023-07-20 15:57:09.276 - INFO - WiFiTestSuite Version [10.20.3]
+2023-07-20 15:57:09.276 - INFO - Logging started in file - ./log/N-4.2.22_Jul-20-2023__15-57-09/log_N-4.2.22.log
+2023-07-20 15:57:09.276 - INFO - --------------------------------------------------------------------------------
+2023-07-20 15:57:09.276 - INFO - Test Info
+2023-07-20 15:57:09.276 - INFO - --------------------------------------------------------------------------------
+2023-07-20 15:57:09.276 - INFO - Test Prog Name    : N
+2023-07-20 15:57:09.276 - INFO - Test ID           : N-4.2.22
+2023-07-20 15:57:09.276 - INFO - Test Usermode     : precert 
+2023-07-20 15:57:09.276 - INFO - Test CmdPath      : ..\cmds\WTS-11n
+2023-07-20 15:57:09.276 - INFO - Test InitFile     : AllInitConfig_N.txt
+2023-07-20 15:57:09.276 - INFO - Test TB File      : \802.11n-Testbed-APs.txt
+2023-07-20 15:57:09.276 - INFO - Test Start Time   : 2023-07-20 15:57:09
+2023-07-20 15:57:09.276 - INFO - --------------------------------------------------------------------------------
+2023-07-20 15:57:09.276 - INFO - Initializing FTP server
+2023-07-20 15:57:09.276 - INFO - FTP server path: C:\Wi-FiTestSuite_20.3\bin\log\N-4.2.22_Jul-20-2023__15-57-09
+2023-07-20 15:57:09.292 - INFO - Starting FTP server on 0.0.0.0:2128
+2023-07-20 15:57:09.806 - INFO - ---------------------------------------
+2023-07-20 15:57:09.806 - INFO - Processing DUTInfo.txt file....
+2023-07-20 15:57:09.806 - INFO - ---------------------------------------
+
+2023-07-20 15:57:09.822 - INFO - Processing MasterTestInfo.xml file....
+2023-07-20 15:57:09.822 - INFO - ---------------------------------------
+
+2023-07-20 15:57:09.947 - INFO - Testplan version=WTS-11n-Testplan-v2.21
+2023-07-20 15:57:09.977 - INFO - 
+         Testcase Init File = AllInitConfig_N.txt 
+
+2023-07-20 15:57:09.977 - INFO - Processing AllInitConfig_N.txt file....
+2023-07-20 15:57:09.977 - INFO - ---------------------------------------
+
+2023-07-20 15:57:10.055 - INFO - stream1 2081 Frames / second
+2023-07-20 15:57:10.055 - INFO - stream2 1856 Frames / second
+2023-07-20 15:57:10.055 - INFO - stream3 1856 Frames / second
+2023-07-20 15:57:10.055 - INFO - stream_trans 281 Frames / second
+2023-07-20 15:57:10.055 - INFO - Processing AllInitCommand_N.txt file....
+2023-07-20 15:57:10.055 - INFO - ---------------------------------------
+
+2023-07-20 15:57:10.180 - INFO - 
+         Testcase Command File = N-4.2.22.txt 
+
+2023-07-20 15:57:10.180 - INFO - START: TEST CASE [N-4.2.22.txt] 
+2023-07-20 15:57:10.180 - INFO - Processing N-4.2.22.txt file....
+2023-07-20 15:57:10.180 - INFO - ---------------------------------------
+
+2023-07-20 15:57:12.723 - INFO - 
+===============Testbed device check==============================
+2023-07-20 15:57:12.723 - INFO - Device [HostAPD <RADIUSSERVER>] control network IP and Port not found, skipping...
+2023-07-20 15:57:12.723 - INFO - Device [Atheros11n <AP>] control network IP and Port not found, skipping...
+2023-07-20 15:57:12.723 - INFO - Device [Broadcom6715 <AP>] control network IP and Port not found, skipping...
+2023-07-20 15:57:12.723 - INFO - Device [WFAEMT <WFAEMT>] control network IP and Port not found, skipping...
+2023-07-20 15:57:12.723 - INFO - Device [PowerSwitch <POWERSWITCH>] control network IP and Port not found, skipping...
+2023-07-20 15:57:13.176 - INFO - 
+        ~~~~~ Pre-configuration for the test ~~~~~
+
+2023-07-20 15:57:13.176 - INFO - echo ~~~~ $DutMacAddress = 02:e0:92:00:01:41 ~~~~
+2023-07-20 15:57:13.191 - INFO - 
+        ~~~~~ [Inside of 11n-testbed-reset.txt ] ~~~~~
+
+2023-07-20 15:57:13.191 - INFO - 
+        ~~~~~ [ Resetting testbed STA] ~~~~~
+
+2023-07-20 15:57:13.191 - INFO - 
+        ~~~~~ [ Resetting 11n STA 1 Realtek 11n] ~~~~~
+
+2023-07-20 15:57:13.191 - INFO - realtek11n (192.168.250.93:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:57:14.377 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,rtl8192s 
+
+2023-07-20 15:57:14.377 - INFO - realtek11n (192.168.250.93:9000) ---> sta_set_11n,interface,rtl8192s ,reset_default,11n
+2023-07-20 15:57:22.661 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE
+
+2023-07-20 15:57:22.661 - INFO - 
+        ~~~~~ [ Resetting 11n STA 2 Broadcomvht as 11n] ~~~~~
+
+2023-07-20 15:57:22.677 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:57:22.894 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-20 15:57:22.894 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-20 15:57:27.184 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:57:27.184 - INFO - 
+        ~~~~~ [ Resetting 11n STA 3 AX210L] ~~~~~
+
+2023-07-20 15:57:27.184 - INFO - ax210l (192.168.250.73:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:57:27.403 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,wlp2s0
+
+2023-07-20 15:57:27.403 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_11n,interface,wlp2s0,reset_default,11n
+2023-07-20 15:57:34.079 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 15:57:34.095 - INFO - 
+        ~~~~~ [ Resetting 11n STA 4  Marvellvht as 11n] ~~~~~
+
+2023-07-20 15:57:34.095 - INFO - marvellvht (192.168.250.63:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:57:35.109 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,mlan0
+
+2023-07-20 15:57:35.109 - INFO - marvellvht (192.168.250.63:9000) ---> sta_set_11n,interface,mlan0,reset_default,11n
+2023-07-20 15:57:36.138 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE
+
+2023-07-20 15:57:36.138 - INFO - 
+        ~~~~~ [ Resetting 11n AP 1 Atheros11n] ~~~~~
+
+2023-07-20 15:57:36.154 - INFO - 
+        ~~~~~ [ Resetting 11n AP 2 Broadcom6715] ~~~~~
+
+2023-07-20 15:57:36.154 - INFO - 
+        ~~~~~ [ Resetting 11n AP 3 Ralink] ~~~~~
+
+2023-07-20 15:57:36.171 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> PowerSwitch,RalinkAP,IPAddress,192.165.100.38,UserName,,Password,,HostName,,PowerSwitchPort,1
+2023-07-20 15:57:36.171 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Access Point Added
+
+2023-07-20 15:57:36.186 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_reset_default,NAME,Ralink,program,11n,type,Testbed
+2023-07-20 15:57:39.227 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-20 15:57:39.227 - INFO - 
+        ~~~~~ Radio Off ~~~~~
+
+2023-07-20 15:57:39.243 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_set_wireless,NAME,Ralink,radio,off
+2023-07-20 15:57:40.257 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-20 15:57:40.257 - INFO - DUT (192.165.100.13:9000) ---> ca_get_version
+2023-07-20 15:57:40.506 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,version,Sigma-CAPI-10.12.0-06.01.00.1716
+
+2023-07-20 15:57:40.506 - INFO - DUT (192.165.100.13:9000) ---> device_get_info
+2023-07-20 15:57:40.740 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,vendor,MxL,model,WAV700_AP,version,06.01.00.1716
+
+2023-07-20 15:57:40.897 - INFO - 
+        ~~~~~ [ Getting TB STA Version Info ] ~~~~~
+
+2023-07-20 15:57:40.897 - INFO - realtek11n (192.168.250.93:9000) ---> ca_get_version
+2023-07-20 15:57:42.066 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,version,WIN7_WIN8_DUT-v9.1.0
+
+2023-07-20 15:57:42.082 - INFO - realtek11n (192.168.250.93:9000) ---> device_get_info
+2023-07-20 15:57:50.381 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,vendor,Realtek,model,RTL8812BU,version,10.9.1222.2016
+
+2023-07-20 15:57:50.944 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-20 15:57:51.161 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-20 15:57:51.161 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-20 15:57:51.381 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-20 15:57:51.864 - INFO - marvellvht (192.168.250.63:9000) ---> ca_get_version
+2023-07-20 15:57:52.862 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,version,11N(20:56:54 Jun 23 2020)
+
+2023-07-20 15:57:52.878 - INFO - marvellvht (192.168.250.63:9000) ---> device_get_info
+2023-07-20 15:58:15.392 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,vendor,NXP,model,RD-88W-8997-WIFI-S0 (PCIe8997),version,Sigma 11N 1.05a
+
+2023-07-20 15:58:15.954 - INFO - ax210l (192.168.250.73:9000) ---> ca_get_version
+2023-07-20 15:58:16.173 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Version,WTS-1.0.15-6r2
+
+2023-07-20 15:58:16.173 - INFO - ax210l (192.168.250.73:9000) ---> device_get_info
+2023-07-20 15:58:16.578 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-20 15:58:17.155 - INFO - 
+        ~~~~~ [ Getting TB AP Version Info ] ~~~~~
+
+2023-07-20 15:58:17.155 - INFO - Ralink (127.0.0.1:7000) ---> ca_get_version
+2023-07-20 15:58:17.171 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,Wi-Fi Test Suite-10.0.0_beta
+
+2023-07-20 15:58:17.171 - INFO - Ralink (127.0.0.1:7000) ---> device_get_info,NAME,Ralink
+2023-07-20 15:58:17.171 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,vendor,Mediatek,model,MT7615_R2TBV2,version,1.3.5.9
+
+2023-07-20 15:58:17.638 - INFO - 
+        ~~~~~ Sniffer device information ~~~~~
+
+2023-07-20 15:58:17.654 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_get_info
+2023-07-20 15:58:18.325 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+2023-07-20 15:58:18.341 - INFO - echo ~~~~ $latestMapConfVersion = MapConfig_N-v1.0 ~~~~
+2023-07-20 15:58:18.341 - INFO - 
+        ~~~~~ Sniffer map.conf file up-to-date ~~~~~
+
+2023-07-20 15:58:18.357 - INFO - echo ~~~~ $latestWfaSnifferVersion = Wi-FiTestSuite_v10.20.2-11n-v1.0 ~~~~
+2023-07-20 15:58:18.372 - INFO - 
+        ~~~~~ WFA sniffer agent up-to-date ~~~~~
+
+2023-07-20 15:58:18.372 - INFO - echo ~~~~ $latestWiresharkVersion = 3.4.8-2dc33a2-WFA-01 ~~~~
+2023-07-20 15:58:18.388 - INFO - 
+        ~~~~~ Wireshark/Tshark up-to-date ~~~~~
+
+2023-07-20 15:58:18.388 - INFO - echo ~~~~ $latestSnifferDriverVersion = 69EF989827E03C5DF96D6E9 ~~~~
+2023-07-20 15:58:18.404 - INFO - 
+        ~~~~~ Sniffer driver up-to-date ~~~~~
+
+2023-07-20 15:58:18.404 - INFO - echo ~~~~ $latestSnifferFirmwareVersion = 59.98ef5ee8.0 ~~~~
+2023-07-20 15:58:18.418 - INFO - 
+        ~~~~~ Sniffer firmware up-to-date ~~~~~
+
+2023-07-20 15:58:18.450 - INFO - 
+        ~~~~~ UCC: Processing PowerOnOffAPs.txt file ~~~~~
+
+2023-07-20 15:58:18.466 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> AccessPoint,RalinkAP,IPAddress,192.165.100.38,UserName,,Password,,HostName,,PowerSwitchPort,1
+2023-07-20 15:58:18.466 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Access Point Added
+
+2023-07-20 15:58:18.466 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_start,filename,SnifferTrace_N-4.2.22,channel,36
+2023-07-20 15:58:18.684 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE
+
+2023-07-20 15:58:18.684 - INFO - 
+        ~~~~~ UCC: Processing APUT-WPA2-PSK-Mixed-ASCII.txt file ~~~~~
+
+2023-07-20 15:58:18.700 - INFO - DUT (192.165.100.13:9000) ---> ap_set_wireless,NAME,Maxlinear,CHANNEL,36,SSID,NVCX@7.N,MODE,11na,RTS,2347,FRGMNT,2346,BCNINT,100
+2023-07-20 15:58:19.510 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:19.510 - INFO - DUT (192.165.100.13:9000) ---> ap_set_security,NAME,Maxlinear,KEYMGNT,WPA2-PSK-Mixed,PSK,NVCX@7.N
+2023-07-20 15:58:19.963 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:19.979 - INFO - DUT (192.165.100.13:9000) ---> ap_config_commit,NAME,Maxlinear
+2023-07-20 15:58:37.203 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:37.203 - INFO - 
+        ~~~~~ UCC: Processing STA-11n-4.2.22.txt file ~~~~~
+
+2023-07-20 15:58:37.219 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-20 15:58:37.219 - INFO - 
+        ~~~~~ UCC: Processing STA1-WPA2-PSK-11n-ASCII.txt file ~~~~~
+
+2023-07-20 15:58:37.234 - INFO - 
+        ~~~~~ [ Configuring STA1 ] ~~~~~
+
+2023-07-20 15:58:37.234 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-20 15:58:37.453 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-20 15:58:37.453 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-20 15:58:37.671 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-20 15:58:38.233 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:58:38.467 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-20 15:58:38.467 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11na,RTS,2347,FRGMNT,2346,powersave,off,wmm,on,HT,off
+2023-07-20 15:58:44.785 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:44.785 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-20 15:58:45.003 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-20 15:58:45.003 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,20
+2023-07-20 15:58:45.221 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:45.221 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-20 15:58:45.441 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:45.441 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-20 15:58:45.660 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:45.660 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-20 15:58:45.878 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:45.878 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,TXSP_STREAM,3SS
+2023-07-20 15:58:46.081 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:46.081 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,RXSP_STREAM,3SS
+2023-07-20 15:58:46.299 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:46.299 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_psk,interface,eth0,ssid,NVCX@7.N,passphrase,NVCX@7.N,encpType,aes-ccmp,keymgmttype,wpa2
+2023-07-20 15:58:49.325 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:49.325 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-20 15:58:49.543 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:58:49.543 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,NVCX@7.N
+2023-07-20 15:58:58.576 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 15:59:08.592 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-20 15:59:08.811 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-20 15:59:08.811 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-20 15:59:09.029 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:41
+
+2023-07-20 15:59:09.029 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-20 15:59:09.232 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-20 15:59:09.232 - INFO - Sleep... 10 seconds
+2023-07-20 15:59:19.234 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,7
+2023-07-20 15:59:20.249 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,63
+
+2023-07-20 15:59:20.265 - INFO - Sleep... 10 seconds
+2023-07-20 15:59:30.279 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,63
+2023-07-20 15:59:33.368 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,28,replies,28,consectimeout,0
+
+2023-07-20 15:59:33.400 - INFO - 
+        ~~~~~ UCC: Processing STA1-4.2.22-WMM-on.txt file ~~~~~
+
+2023-07-20 15:59:33.400 - INFO - 
+        ~~~~~ [ Configuring STA3 ] ~~~~~
+
+2023-07-20 15:59:33.415 - INFO - ax210l (192.168.250.73:9000) ---> ca_get_version
+2023-07-20 15:59:33.634 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Version,WTS-1.0.15-6r2
+
+2023-07-20 15:59:33.634 - INFO - ax210l (192.168.250.73:9000) ---> device_get_info
+2023-07-20 15:59:34.023 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-20 15:59:34.569 - INFO - ax210l (192.168.250.73:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-20 15:59:34.803 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,wlp2s0
+
+2023-07-20 15:59:34.803 - INFO - ax210l (192.168.250.73:9000) ---> sta_preset_testparameters,interface,wlp2s0,supplicant,ZeroConfig,mode,11a,RTS,2347,FRGMNT,2346,preamble,long,powersave,off,wmm,on,HT,off
+2023-07-20 15:59:35.023 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 15:59:35.023 - INFO - ax210l (192.168.250.73:9000) ---> sta_get_info,interface,wlp2s0
+2023-07-20 15:59:35.413 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-20 15:59:35.413 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_psk,interface,wlp2s0,ssid,NVCX@7.N,passphrase,NVCX@7.N,encpType,tkip,keymgmttype,wpa
+2023-07-20 15:59:43.275 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 15:59:43.275 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_ip_config,interface,wlp2s0,dhcp,0,ip,192.165.100.73,mask,255.255.0.0
+2023-07-20 15:59:43.493 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 15:59:43.493 - INFO - ax210l (192.168.250.73:9000) ---> sta_associate,interface,wlp2s0,ssid,NVCX@7.N
+2023-07-20 15:59:48.500 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 15:59:58.516 - INFO - Sleep... 60 seconds
+2023-07-20 16:00:58.530 - INFO - ax210l (192.168.250.73:9000) ---> sta_is_connected,interface,wlp2s0
+2023-07-20 16:00:58.749 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,connected,1
+
+2023-07-20 16:00:58.749 - INFO - ax210l (192.168.250.73:9000) ---> sta_get_bssid,interface,wlp2s0
+2023-07-20 16:00:58.967 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,bssid,02:e0:92:00:01:41
+
+2023-07-20 16:00:58.967 - INFO - ax210l (192.168.250.73:9000) ---> sta_get_ip_config,interface,wlp2s0
+2023-07-20 16:00:59.186 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.73,mask,255.255.0.0,primary-dns,192.165.1.1
+
+2023-07-20 16:00:59.186 - INFO - Sleep... 10 seconds
+2023-07-20 16:01:09.200 - INFO - ax210l (192.168.250.73:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,3,duration,5
+2023-07-20 16:01:09.418 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,13
+
+2023-07-20 16:01:09.418 - INFO - Sleep... 10 seconds
+2023-07-20 16:01:19.434 - INFO - ax210l (192.168.250.73:9000) ---> traffic_stop_ping,streamID,13
+2023-07-20 16:01:19.653 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Sent,15,Replies,15
+
+2023-07-20 16:01:19.653 - INFO - 
+        ~~~~~ [ Running - STEP 2 and 3] ~~~~~
+
+2023-07-20 16:01:23.693 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_stop
+2023-07-20 16:01:23.911 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE
+
+2023-07-20 16:01:23.911 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_CWmin,4
+2023-07-20 16:01:48.934 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:48.934 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_CWmax,10
+2023-07-20 16:01:49.154 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:49.154 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_AIFSN,7
+2023-07-20 16:01:49.371 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:49.371 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_TXOP,0
+2023-07-20 16:01:49.575 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:49.575 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_ACM,no
+2023-07-20 16:01:49.792 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:49.792 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_CWmin,4
+2023-07-20 16:01:50.012 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:50.012 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_CWmax,10
+2023-07-20 16:01:50.230 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:50.230 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_AIFSN,3
+2023-07-20 16:01:50.447 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:50.447 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_TXOP,0
+2023-07-20 16:01:50.667 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:50.667 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_ACM,no
+2023-07-20 16:01:50.884 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:50.884 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_CWmin,3
+2023-07-20 16:01:51.104 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:51.104 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_CWmax,4
+2023-07-20 16:01:51.322 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:51.322 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_AIFSN,2
+2023-07-20 16:01:51.525 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:51.525 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_TXOP,94
+2023-07-20 16:01:51.743 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:51.743 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_ACM,no
+2023-07-20 16:01:51.946 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:51.946 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_CWmin,2
+2023-07-20 16:01:52.164 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:52.164 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_CWmax,3
+2023-07-20 16:01:52.382 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:52.382 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_AIFSN,2
+2023-07-20 16:01:52.585 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:52.585 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_TXOP,47
+2023-07-20 16:01:52.803 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:52.803 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_ACM,no
+2023-07-20 16:01:53.022 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:53.022 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,00:90:4c:0d:d1:85,framename,probereq,wmmie,0
+2023-07-20 16:01:53.224 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:53.224 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,3c:e9:f7:c0:1c:64,framename,probereq,wmmie,0
+2023-07-20 16:01:53.444 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:53.444 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,00:90:4c:0d:d1:85,framename,proberesp,wmmie,1
+2023-07-20 16:01:53.661 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:53.661 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,3c:e9:f7:c0:1c:64,framename,proberesp,wmmie,1
+2023-07-20 16:01:53.880 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:53.880 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,00:90:4c:0d:d1:85,bssid,02:e0:92:00:01:41,framename,assoreq,wmmie,1
+2023-07-20 16:01:54.098 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:54.098 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,3c:e9:f7:c0:1c:64,bssid,02:e0:92:00:01:41,framename,assoreq,wmmie,1
+2023-07-20 16:01:54.316 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:54.316 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,00:90:4c:0d:d1:85,framename,assoresp,wmmie,1
+2023-07-20 16:01:54.536 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:54.536 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,3c:e9:f7:c0:1c:64,framename,assoresp,wmmie,1
+2023-07-20 16:01:54.753 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,CheckResult,SUCCESS
+
+2023-07-20 16:01:54.753 - INFO - 
+        ~~~~~ [ Running - STEP 4] ~~~~~
+
+2023-07-20 16:01:54.753 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-4.txt file ~~~~~
+
+2023-07-20 16:01:54.769 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:01:54.769 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:01:55.783 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:01:55.783 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:01:56.798 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:02:01.821 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:02:02.819 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,63
+
+2023-07-20 16:02:02.835 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:02:03.832 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,64
+
+2023-07-20 16:02:03.848 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:02:04.846 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,64
+
+2023-07-20 16:02:04.846 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:02:05.861 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,65
+
+2023-07-20 16:02:05.861 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,64
+2023-07-20 16:02:06.875 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:06.875 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,65
+2023-07-20 16:02:07.888 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:08.903 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,63 64
+2023-07-20 16:02:08.903 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:02:21.914 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 63 64,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:02:21.914 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 63;192.168.250.50:9003 Completed 
+2023-07-20 16:02:21.914 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 64;192.168.250.50:9003 Completed 
+2023-07-20 16:02:24.299 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,65 64
+2023-07-20 16:02:24.299 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:02:25.299 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 65 64,txFrames, 0 0,rxFrames, 18545 6160,txPayloadBytes, 0 0,rxPayloadBytes, 18545000 6160000,outOfSequenceFrames 0 0
+
+2023-07-20 16:02:25.299 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 65;192.168.250.43:9000 Completed 
+2023-07-20 16:02:25.299 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 64;192.168.250.43:9000 Completed 
+2023-07-20 16:02:34.331 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:02:35.329 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:35.345 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:02:36.344 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:02:36.344 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:02:37.358 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,65
+
+2023-07-20 16:02:37.358 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:02:38.371 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,66
+
+2023-07-20 16:02:38.371 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:02:39.385 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,66
+
+2023-07-20 16:02:39.385 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:02:40.400 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,67
+
+2023-07-20 16:02:40.400 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.73,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:02:41.414 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,67
+
+2023-07-20 16:02:41.414 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5602,destinationPort,5602
+2023-07-20 16:02:41.631 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,14
+
+2023-07-20 16:02:41.631 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,66
+2023-07-20 16:02:42.631 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:42.645 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,67
+2023-07-20 16:02:43.644 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:43.660 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_start,streamID,14
+2023-07-20 16:02:43.878 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 16:02:44.892 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,65 66 67
+2023-07-20 16:02:44.892 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:02:57.903 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 65 66 67,txFrames,20820 18570 18570 ,rxFrames,0 0 0 ,txPayloadBytes,20820000 18570000 18570000 ,rxPayloadBytes, 0  0  0 ,outOfSequenceFrames0 0 0 
+
+2023-07-20 16:02:57.903 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 65;192.168.250.50:9003 Completed 
+2023-07-20 16:02:57.903 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 66;192.168.250.50:9003 Completed 
+2023-07-20 16:02:57.903 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 67;192.168.250.50:9003 Completed 
+2023-07-20 16:03:00.289 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,67 66
+2023-07-20 16:03:00.289 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:03:01.288 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 67 66,txFrames, 0 0,rxFrames, 18570 3883,txPayloadBytes, 0 0,rxPayloadBytes, 18570000 3883000,outOfSequenceFrames 0 0
+
+2023-07-20 16:03:01.288 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 67;192.168.250.43:9000 Completed 
+2023-07-20 16:03:01.288 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 66;192.168.250.43:9000 Completed 
+2023-07-20 16:03:07.309 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_stop,streamID,14
+2023-07-20 16:03:07.309 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:03:07.528 - INFO - ax210l          <--1 status,COMPLETE,streamID,14,txActFrames,0,txFrames,0,rxFrames,3535,txPayloadBytes,0,rxPayloadBytes,3535000,outOfSequenceFrames,0
+
+2023-07-20 16:03:07.528 - INFO - ax210l (192.168.250.73:9000) <----  RECV Stream - 14;192.168.250.73:9000 Completed 
+2023-07-20 16:03:17.325 - INFO - 
+         --------------------STREAM RESULTS-----------------------
+2023-07-20 16:03:17.325 - INFO - 
+         ----- RTP_1-BestEffort ( 192.168.250.50:9003 --> 192.168.250.43:9000 ) PHASE  = 1 -----
+2023-07-20 16:03:17.325 - INFO - 
+           RX               Bytes   |  TX    20820000   | Stream ID = 63
+2023-07-20 16:03:17.325 - INFO - 
+           RX      6160000  Bytes   |  TX           0   | Stream ID = 64
+2023-07-20 16:03:17.325 - INFO - 
+         ----- RTP_2-Video ( 192.168.250.50:9003 --> 192.168.250.43:9000 ) PHASE  = 1 -----
+2023-07-20 16:03:17.325 - INFO - 
+           RX            0  Bytes   |  TX    18570000   | Stream ID = 64
+2023-07-20 16:03:17.341 - INFO - 
+           RX     18545000  Bytes   |  TX           0   | Stream ID = 65
+2023-07-20 16:03:17.341 - INFO - 
+         ----- RTP_1-BestEffort ( 192.168.250.50:9003 --> 192.168.250.43:9000 ) PHASE  = 2 -----
+2023-07-20 16:03:17.341 - INFO - 
+           RX               Bytes   |  TX    20820000   | Stream ID = 65
+2023-07-20 16:03:17.341 - INFO - 
+           RX      3883000  Bytes   |  TX           0   | Stream ID = 66
+2023-07-20 16:03:17.341 - INFO - 
+         ----- RTP_2-Video ( 192.168.250.50:9003 --> 192.168.250.43:9000 ) PHASE  = 2 -----
+2023-07-20 16:03:17.341 - INFO - 
+           RX            0  Bytes   |  TX    18570000   | Stream ID = 66
+2023-07-20 16:03:17.341 - INFO - 
+           RX     18570000  Bytes   |  TX           0   | Stream ID = 67
+2023-07-20 16:03:17.355 - INFO - 
+         ----- RTP_3-BestEffort ( 192.168.250.50:9003 --> 192.168.250.73:9000 ) PHASE  = 2 -----
+2023-07-20 16:03:17.355 - INFO - 
+           RX               Bytes   |  TX    18570000   | Stream ID = 67
+2023-07-20 16:03:17.355 - INFO - 
+           RX      3535000  Bytes   |  TX           0   | Stream ID = 14
+2023-07-20 16:03:17.355 - INFO - --------------------------SUMMARY----------------------------------
+2023-07-20 16:03:17.355 - INFO -                                               | Phase1 (Bytes) | Phase2 (Bytes)
+2023-07-20 16:03:17.355 - INFO - -------------------------------------------------------------------
+2023-07-20 16:03:17.355 - INFO - 
+       RTP1_BestEffort [192.168.250.50:9003-->192.168.250.43:9000]     |    6160000 |    3883000
+2023-07-20 16:03:17.371 - INFO - 
+       RTP2_Video      [192.168.250.50:9003-->192.168.250.43:9000]     |   18545000 |   18570000
+2023-07-20 16:03:17.371 - INFO - 
+       RTP3_BestEffort [192.168.250.50:9003-->192.168.250.73:9000]     |            |    3535000
+2023-07-20 16:03:17.371 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:03:17.371 - INFO - Video Phase 1 = 18545000 Bytes | Video Phase 2 = 18570000 Bytes 
+2023-07-20 16:03:17.371 - INFO - Expected  > 90 %
+2023-07-20 16:03:17.371 - INFO - Actual -  100.13 %
+2023-07-20 16:03:17.387 - INFO - TEST RESULT ---> STEP4-PASS
+2023-07-20 16:03:17.387 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:03:22.411 - INFO - Sleep... 5 seconds
+2023-07-20 16:03:27.417 - INFO - 
+        ~~~~~ [ Running - STEP 5 ~~~~~
+
+2023-07-20 16:03:27.417 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-5.txt file ~~~~~
+
+2023-07-20 16:03:27.434 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:03:27.434 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:03:28.431 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:03:28.447 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:03:29.446 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:03:34.484 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:03:35.483 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,68
+
+2023-07-20 16:03:35.499 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:03:36.496 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,68
+
+2023-07-20 16:03:36.513 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:03:37.510 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,69
+
+2023-07-20 16:03:37.510 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:03:38.525 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,69
+
+2023-07-20 16:03:38.525 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,68
+2023-07-20 16:03:39.539 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:03:39.539 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,69
+2023-07-20 16:03:40.552 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:03:41.566 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,68 69
+2023-07-20 16:03:41.566 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:03:54.578 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 68 69,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:03:54.578 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 68;192.168.250.50:9003 Completed 
+2023-07-20 16:03:54.578 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 69;192.168.250.50:9003 Completed 
+2023-07-20 16:03:56.964 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,69 68
+2023-07-20 16:03:56.964 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:03:57.963 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 69 68,txFrames, 0 0,rxFrames, 18570 6835,txPayloadBytes, 0 0,rxPayloadBytes, 18570000 6835000,outOfSequenceFrames 0 0
+
+2023-07-20 16:03:57.963 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 69;192.168.250.43:9000 Completed 
+2023-07-20 16:03:57.963 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 68;192.168.250.43:9000 Completed 
+2023-07-20 16:04:06.996 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:04:07.996 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:04:08.010 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:04:09.009 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:04:09.009 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:04:10.023 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,70
+
+2023-07-20 16:04:10.023 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:04:11.038 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,70
+
+2023-07-20 16:04:11.038 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:04:12.052 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,71
+
+2023-07-20 16:04:12.052 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:04:13.049 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,71
+
+2023-07-20 16:04:13.065 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:04:13.283 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,15
+
+2023-07-20 16:04:13.283 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.73,sourcePort,5602,destinationPort,5602
+2023-07-20 16:04:14.285 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,72
+
+2023-07-20 16:04:14.299 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,70
+2023-07-20 16:04:15.299 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:04:15.313 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,71
+2023-07-20 16:04:16.312 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:04:16.328 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,72
+2023-07-20 16:04:17.326 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:04:18.341 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,70 71
+2023-07-20 16:04:18.341 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:04:19.355 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_send,streamID,15
+2023-07-20 16:04:19.355 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:04:30.368 - INFO - ax210l          <--1 status,COMPLETE,streamID,15,txActFrames,14874,txFrames,14874,rxFrames,0,txPayloadBytes,14874000,rxPayloadBytes,0,outOfSequenceFrames,0
+
+2023-07-20 16:04:30.368 - INFO - ax210l (192.168.250.73:9000) <--  SEND Stream - 15;192.168.250.73:9000 Completed 
+2023-07-20 16:04:31.351 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 70 71,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:04:31.351 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 70;192.168.250.50:9003 Completed 
+2023-07-20 16:04:31.351 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 71;192.168.250.50:9003 Completed 
+2023-07-20 16:04:33.710 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,71 70
+2023-07-20 16:04:33.710 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:04:34.707 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 71 70,txFrames, 0 0,rxFrames, 18570 5084,txPayloadBytes, 0 0,rxPayloadBytes, 18570000 5084000,outOfSequenceFrames 0 0
+
+2023-07-20 16:04:34.707 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 71;192.168.250.43:9000 Completed 
+2023-07-20 16:04:34.723 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 70;192.168.250.43:9000 Completed 
+2023-07-20 16:04:40.730 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_stop,streamID,72
+2023-07-20 16:04:40.730 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:04:41.727 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 72,txFrames, 0,rxFrames, 14874,txPayloadBytes, 0,rxPayloadBytes, 14874000,outOfSequenceFrames 0
+
+2023-07-20 16:04:41.727 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 72;192.168.250.50:9003 Completed 
+2023-07-20 16:04:50.746 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:04:50.746 - INFO - Video Phase 1 = 18570000 Bytes | Video Phase 2 = 18570000 Bytes 
+2023-07-20 16:04:50.746 - INFO - Expected  > 90 %
+2023-07-20 16:04:50.746 - INFO - Actual -   100.0 %
+2023-07-20 16:04:50.746 - INFO - TEST RESULT ---> STEP5-PASS
+2023-07-20 16:04:50.746 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:04:55.786 - INFO - Sleep... 5 seconds
+2023-07-20 16:05:00.792 - INFO - 
+        ~~~~~ [ Running - STEP 6] ~~~~~
+
+2023-07-20 16:05:00.792 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-6.txt file ~~~~~
+
+2023-07-20 16:05:05.832 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:05:06.832 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:05:06.846 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:05:07.845 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:07.845 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:05:08.859 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,72
+
+2023-07-20 16:05:08.859 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.43,sourcePort,5600,destinationPort,5600
+2023-07-20 16:05:09.874 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,73
+
+2023-07-20 16:05:09.874 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:05:10.888 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,73
+
+2023-07-20 16:05:10.888 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.43,sourcePort,5601,destinationPort,5601
+2023-07-20 16:05:11.901 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,74
+
+2023-07-20 16:05:11.901 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,74
+2023-07-20 16:05:12.900 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:12.915 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,73
+2023-07-20 16:05:13.914 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:14.944 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_send,streamID,72 73
+2023-07-20 16:05:14.944 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:05:27.953 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 72 73,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:05:27.953 - INFO - broadcomvht (192.168.250.43:9000) <--  SEND Stream - 72;192.168.250.43:9000 Completed 
+2023-07-20 16:05:27.953 - INFO - broadcomvht (192.168.250.43:9000) <--  SEND Stream - 73;192.168.250.43:9000 Completed 
+2023-07-20 16:05:30.341 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_stop,streamID,73 74
+2023-07-20 16:05:30.341 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:05:31.338 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 73 74,txFrames, 0 0,rxFrames, 20819 18570,txPayloadBytes, 0 0,rxPayloadBytes, 20819000 18570000,outOfSequenceFrames 0 0
+
+2023-07-20 16:05:31.338 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 73;192.168.250.50:9003 Completed 
+2023-07-20 16:05:31.355 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 74;192.168.250.50:9003 Completed 
+2023-07-20 16:05:40.371 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:05:41.369 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:05:41.369 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:05:42.384 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:42.384 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,2081
+2023-07-20 16:05:43.398 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,74
+
+2023-07-20 16:05:43.398 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.43,sourcePort,5600,destinationPort,5600
+2023-07-20 16:05:44.395 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,75
+
+2023-07-20 16:05:44.411 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:05:45.410 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,75
+
+2023-07-20 16:05:45.426 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.43,sourcePort,5601,destinationPort,5601
+2023-07-20 16:05:46.424 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,76
+
+2023-07-20 16:05:46.440 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.73,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:05:47.438 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,77
+
+2023-07-20 16:05:47.454 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5602,destinationPort,5602
+2023-07-20 16:05:47.673 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,16
+
+2023-07-20 16:05:47.673 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,76
+2023-07-20 16:05:48.671 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:48.687 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,75
+2023-07-20 16:05:49.686 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:05:49.700 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_start,streamID,16
+2023-07-20 16:05:49.920 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 16:05:50.934 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_send,streamID,74 75
+2023-07-20 16:05:50.934 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:05:51.947 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,77
+2023-07-20 16:05:51.947 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:06:03.944 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 74 75,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:06:03.944 - INFO - broadcomvht (192.168.250.43:9000) <--  SEND Stream - 74;192.168.250.43:9000 Completed 
+2023-07-20 16:06:03.944 - INFO - broadcomvht (192.168.250.43:9000) <--  SEND Stream - 75;192.168.250.43:9000 Completed 
+2023-07-20 16:06:04.957 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 77,txFrames,18570 ,rxFrames,0 ,txPayloadBytes,18570000 ,rxPayloadBytes, 0 ,outOfSequenceFrames0 
+
+2023-07-20 16:06:04.957 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 77;192.168.250.50:9003 Completed 
+2023-07-20 16:06:06.318 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_stop,streamID,75 76
+2023-07-20 16:06:06.318 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:06:07.316 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 75 76,txFrames, 0 0,rxFrames, 16421 18570,txPayloadBytes, 0 0,rxPayloadBytes, 16421000 18570000,outOfSequenceFrames 0 0
+
+2023-07-20 16:06:07.316 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 75;192.168.250.50:9003 Completed 
+2023-07-20 16:06:07.316 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 76;192.168.250.50:9003 Completed 
+2023-07-20 16:06:13.338 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_stop,streamID,16
+2023-07-20 16:06:13.338 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:06:13.556 - INFO - ax210l          <--1 status,COMPLETE,streamID,16,txActFrames,0,txFrames,0,rxFrames,5931,txPayloadBytes,0,rxPayloadBytes,5931000,outOfSequenceFrames,0
+
+2023-07-20 16:06:13.556 - INFO - ax210l (192.168.250.73:9000) <----  RECV Stream - 16;192.168.250.73:9000 Completed 
+2023-07-20 16:06:23.355 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:06:23.355 - INFO - Video Phase 1 = 18570000 Bytes | Video Phase 2 = 18570000 Bytes 
+2023-07-20 16:06:23.355 - INFO - Expected  > 90 %
+2023-07-20 16:06:23.355 - INFO - Actual -   100.0 %
+2023-07-20 16:06:23.355 - INFO - TEST RESULT ---> STEP6-PASS
+2023-07-20 16:06:23.355 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:06:28.395 - INFO - Sleep... 5 seconds
+2023-07-20 16:06:33.403 - INFO - 
+        ~~~~~ [ Running - STEP 7] ~~~~~
+
+2023-07-20 16:06:33.403 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-7.txt file ~~~~~
+
+2023-07-20 16:06:33.418 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:06:33.418 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:06:34.433 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:06:34.433 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:06:35.447 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:06:40.470 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Video,frameRate,2081
+2023-07-20 16:06:41.467 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,78
+
+2023-07-20 16:06:41.483 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:06:42.482 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,76
+
+2023-07-20 16:06:42.497 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Voice,frameRate,1856
+2023-07-20 16:06:43.496 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,79
+
+2023-07-20 16:06:43.512 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:06:44.509 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,77
+
+2023-07-20 16:06:44.509 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,76
+2023-07-20 16:06:45.523 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:06:45.523 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,77
+2023-07-20 16:06:46.538 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:06:47.552 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,78 79
+2023-07-20 16:06:47.552 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:06:59.549 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 78 79,txFrames,20820 18500 ,rxFrames,0 0 ,txPayloadBytes,20820000 18500000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:06:59.563 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 78;192.168.250.50:9003 Completed 
+2023-07-20 16:06:59.563 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 79;192.168.250.50:9003 Completed 
+2023-07-20 16:07:01.920 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,77 76
+2023-07-20 16:07:01.920 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:07:02.917 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 77 76,txFrames, 0 0,rxFrames, 18500 17997,txPayloadBytes, 0 0,rxPayloadBytes, 18500000 17997000,outOfSequenceFrames 0 0
+
+2023-07-20 16:07:02.917 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 77;192.168.250.43:9000 Completed 
+2023-07-20 16:07:02.934 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 76;192.168.250.43:9000 Completed 
+2023-07-20 16:07:11.951 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:07:12.950 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:07:12.966 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:07:13.963 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:07:13.963 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Video,frameRate,2081
+2023-07-20 16:07:14.977 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,80
+
+2023-07-20 16:07:14.977 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:07:15.992 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,78
+
+2023-07-20 16:07:15.992 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Voice,frameRate,1856
+2023-07-20 16:07:17.006 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,81
+
+2023-07-20 16:07:17.006 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:07:18.019 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,79
+
+2023-07-20 16:07:18.019 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.73,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:07:19.019 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,82
+
+2023-07-20 16:07:19.035 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5602,destinationPort,5602
+2023-07-20 16:07:19.253 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,17
+
+2023-07-20 16:07:19.253 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,78
+2023-07-20 16:07:20.252 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:07:20.267 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,79
+2023-07-20 16:07:21.266 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:07:21.282 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_start,streamID,17
+2023-07-20 16:07:21.500 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 16:07:22.513 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,80 81 82
+2023-07-20 16:07:22.513 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:07:34.512 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 80 81 82,txFrames,20820 18516 18570 ,rxFrames,0 0 0 ,txPayloadBytes,20820000 18516000 18570000 ,rxPayloadBytes, 0  0  0 ,outOfSequenceFrames0 0 0 
+
+2023-07-20 16:07:34.512 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 80;192.168.250.50:9003 Completed 
+2023-07-20 16:07:34.528 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 81;192.168.250.50:9003 Completed 
+2023-07-20 16:07:34.528 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 82;192.168.250.50:9003 Completed 
+2023-07-20 16:07:36.868 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,79 78
+2023-07-20 16:07:36.868 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:07:37.865 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 79 78,txFrames, 0 0,rxFrames, 18516 8034,txPayloadBytes, 0 0,rxPayloadBytes, 18516000 8034000,outOfSequenceFrames 0 0
+
+2023-07-20 16:07:37.865 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 79;192.168.250.43:9000 Completed 
+2023-07-20 16:07:37.865 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 78;192.168.250.43:9000 Completed 
+2023-07-20 16:07:43.888 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_stop,streamID,17
+2023-07-20 16:07:43.888 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:07:44.121 - INFO - ax210l          <--1 status,COMPLETE,streamID,17,txActFrames,0,txFrames,0,rxFrames,8053,txPayloadBytes,0,rxPayloadBytes,8053000,outOfSequenceFrames,0
+
+2023-07-20 16:07:44.138 - INFO - ax210l (192.168.250.73:9000) <----  RECV Stream - 17;192.168.250.73:9000 Completed 
+2023-07-20 16:07:53.903 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:07:53.903 - INFO - Voice Phase 1 = 18500000 Bytes | Voice Phase 2 = 18516000 Bytes 
+2023-07-20 16:07:53.903 - INFO - Expected  > 90 %
+2023-07-20 16:07:53.903 - INFO - Actual -  100.08 %
+2023-07-20 16:07:53.903 - INFO - TEST RESULT ---> STEP7-PASS
+2023-07-20 16:07:53.903 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:07:58.941 - INFO - Sleep... 5 seconds
+2023-07-20 16:08:03.950 - INFO - 
+        ~~~~~ [ Running - STEP 8] ~~~~~
+
+2023-07-20 16:08:03.950 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-8.txt file ~~~~~
+
+2023-07-20 16:08:03.964 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:08:03.964 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:08:04.979 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:04.979 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:08:05.977 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:08:11.016 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Video,frameRate,2081
+2023-07-20 16:08:12.015 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,83
+
+2023-07-20 16:08:12.029 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:08:13.029 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,80
+
+2023-07-20 16:08:13.043 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Voice,frameRate,1856
+2023-07-20 16:08:14.042 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,84
+
+2023-07-20 16:08:14.042 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:08:15.056 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,81
+
+2023-07-20 16:08:15.056 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,80
+2023-07-20 16:08:16.071 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:16.071 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,81
+2023-07-20 16:08:17.085 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:18.098 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,83 84
+2023-07-20 16:08:18.098 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:08:30.095 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 83 84,txFrames,20820 18509 ,rxFrames,0 0 ,txPayloadBytes,20820000 18509000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:08:30.095 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 83;192.168.250.50:9003 Completed 
+2023-07-20 16:08:30.111 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 84;192.168.250.50:9003 Completed 
+2023-07-20 16:08:32.467 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,81 80
+2023-07-20 16:08:32.467 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:08:33.464 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 81 80,txFrames, 0 0,rxFrames, 18509 17850,txPayloadBytes, 0 0,rxPayloadBytes, 18509000 17850000,outOfSequenceFrames 0 0
+
+2023-07-20 16:08:33.464 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 81;192.168.250.43:9000 Completed 
+2023-07-20 16:08:33.464 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 80;192.168.250.43:9000 Completed 
+2023-07-20 16:08:42.496 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:08:43.496 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:43.510 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:08:44.509 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:08:44.509 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Video,frameRate,2081
+2023-07-20 16:08:45.523 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,85
+
+2023-07-20 16:08:45.523 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:08:46.538 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,82
+
+2023-07-20 16:08:46.538 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,Voice,frameRate,1856
+2023-07-20 16:08:47.552 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,86
+
+2023-07-20 16:08:47.552 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:08:48.549 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,83
+
+2023-07-20 16:08:48.565 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,Video,frameRate,1856
+2023-07-20 16:08:48.783 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,18
+
+2023-07-20 16:08:48.783 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.73,sourcePort,5602,destinationPort,5602
+2023-07-20 16:08:49.782 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,87
+
+2023-07-20 16:08:49.798 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,82
+2023-07-20 16:08:50.796 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:50.812 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,83
+2023-07-20 16:08:51.811 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:08:51.825 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,87
+2023-07-20 16:08:52.825 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:08:53.838 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,85 86
+2023-07-20 16:08:53.838 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:08:54.852 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_send,streamID,18
+2023-07-20 16:08:54.852 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:09:04.868 - INFO - ax210l          <--1 status,COMPLETE,streamID,18,txActFrames,18500,txFrames,18500,rxFrames,0,txPayloadBytes,18500000,rxPayloadBytes,0,outOfSequenceFrames,0
+
+2023-07-20 16:09:04.868 - INFO - ax210l (192.168.250.73:9000) <--  SEND Stream - 18;192.168.250.73:9000 Completed 
+2023-07-20 16:09:05.835 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 85 86,txFrames,20820 18502 ,rxFrames,0 0 ,txPayloadBytes,20820000 18502000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:09:05.835 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 85;192.168.250.50:9003 Completed 
+2023-07-20 16:09:05.851 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 86;192.168.250.50:9003 Completed 
+2023-07-20 16:09:08.190 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,83 82
+2023-07-20 16:09:08.190 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:09:09.188 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 83 82,txFrames, 0 0,rxFrames, 18502 6851,txPayloadBytes, 0 0,rxPayloadBytes, 18502000 6851000,outOfSequenceFrames 0 0
+
+2023-07-20 16:09:09.188 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 83;192.168.250.43:9000 Completed 
+2023-07-20 16:09:09.188 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 82;192.168.250.43:9000 Completed 
+2023-07-20 16:09:15.210 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_stop,streamID,87
+2023-07-20 16:09:15.210 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:09:16.209 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 87,txFrames, 0,rxFrames, 18500,txPayloadBytes, 0,rxPayloadBytes, 18500000,outOfSequenceFrames 0
+
+2023-07-20 16:09:16.209 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 87;192.168.250.50:9003 Completed 
+2023-07-20 16:09:25.226 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:09:25.226 - INFO - Voice Phase 1 = 18509000 Bytes | Voice Phase 2 = 18502000 Bytes 
+2023-07-20 16:09:25.226 - INFO - Expected  > 90 %
+2023-07-20 16:09:25.226 - INFO - Actual -  99.962 %
+2023-07-20 16:09:25.226 - INFO - TEST RESULT ---> STEP8-PASS
+2023-07-20 16:09:25.226 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:09:30.265 - INFO - Sleep... 5 seconds
+2023-07-20 16:09:35.272 - INFO - 
+        ~~~~~ [ Running - STEP 9] ~~~~~
+
+2023-07-20 16:09:35.272 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-9.txt file ~~~~~
+
+2023-07-20 16:09:35.288 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:09:35.288 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:09:36.302 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:09:36.302 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:09:37.299 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:09:42.338 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Background,frameRate,2081
+2023-07-20 16:09:43.336 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,88
+
+2023-07-20 16:09:43.352 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:09:44.351 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,84
+
+2023-07-20 16:09:44.367 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:09:45.365 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,89
+
+2023-07-20 16:09:45.381 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:09:46.378 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,85
+
+2023-07-20 16:09:46.378 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,84
+2023-07-20 16:09:47.392 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:09:47.392 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,85
+2023-07-20 16:09:48.407 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:09:49.421 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,88 89
+2023-07-20 16:09:49.421 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:10:02.431 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 88 89,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:10:02.431 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 88;192.168.250.50:9003 Completed 
+2023-07-20 16:10:02.431 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 89;192.168.250.50:9003 Completed 
+2023-07-20 16:10:04.819 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,85 84
+2023-07-20 16:10:04.819 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:10:05.816 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 85 84,txFrames, 0 0,rxFrames, 17656 6553,txPayloadBytes, 0 0,rxPayloadBytes, 17656000 6553000,outOfSequenceFrames 0 0
+
+2023-07-20 16:10:05.816 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 85;192.168.250.43:9000 Completed 
+2023-07-20 16:10:05.816 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 84;192.168.250.43:9000 Completed 
+2023-07-20 16:10:14.849 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:10:15.848 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:10:15.864 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:10:16.861 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:10:16.861 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Background,frameRate,2081
+2023-07-20 16:10:17.875 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,90
+
+2023-07-20 16:10:17.875 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:10:18.890 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,86
+
+2023-07-20 16:10:18.890 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:10:19.904 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,91
+
+2023-07-20 16:10:19.904 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:10:20.917 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,87
+
+2023-07-20 16:10:20.917 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.73,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,Background,frameRate,1856
+2023-07-20 16:10:21.915 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,92
+
+2023-07-20 16:10:21.931 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5602,destinationPort,5602
+2023-07-20 16:10:22.150 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,19
+
+2023-07-20 16:10:22.150 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,86
+2023-07-20 16:10:23.148 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:10:23.164 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,87
+2023-07-20 16:10:24.163 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:10:24.177 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_start,streamID,19
+2023-07-20 16:10:24.397 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-20 16:10:25.411 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,90 91 92
+2023-07-20 16:10:25.411 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:10:38.421 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 90 91 92,txFrames,20820 18570 18570 ,rxFrames,0 0 0 ,txPayloadBytes,20820000 18570000 18570000 ,rxPayloadBytes, 0  0  0 ,outOfSequenceFrames0 0 0 
+
+2023-07-20 16:10:38.421 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 90;192.168.250.50:9003 Completed 
+2023-07-20 16:10:38.421 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 91;192.168.250.50:9003 Completed 
+2023-07-20 16:10:38.421 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 92;192.168.250.50:9003 Completed 
+2023-07-20 16:10:40.808 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,87 86
+2023-07-20 16:10:40.808 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:10:41.805 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 87 86,txFrames, 0 0,rxFrames, 16631 3668,txPayloadBytes, 0 0,rxPayloadBytes, 16631000 3668000,outOfSequenceFrames 0 0
+
+2023-07-20 16:10:41.805 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 87;192.168.250.43:9000 Completed 
+2023-07-20 16:10:41.822 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 86;192.168.250.43:9000 Completed 
+2023-07-20 16:10:47.828 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_receive_stop,streamID,19
+2023-07-20 16:10:47.828 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:10:48.046 - INFO - ax210l          <--1 status,COMPLETE,streamID,19,txActFrames,0,txFrames,0,rxFrames,3750,txPayloadBytes,0,rxPayloadBytes,3750000,outOfSequenceFrames,0
+
+2023-07-20 16:10:48.046 - INFO - ax210l (192.168.250.73:9000) <----  RECV Stream - 19;192.168.250.73:9000 Completed 
+2023-07-20 16:10:57.842 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:10:57.842 - INFO - BestEffort Phase 1 = 17656000 Bytes | BestEffort Phase 2 = 16631000 Bytes 
+2023-07-20 16:10:57.842 - INFO - Expected  > 90 %
+2023-07-20 16:10:57.842 - INFO - Actual -  94.194 %
+2023-07-20 16:10:57.842 - INFO - TEST RESULT ---> STEP9-PASS
+2023-07-20 16:10:57.842 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:11:02.881 - INFO - Sleep... 5 seconds
+2023-07-20 16:11:07.890 - INFO - 
+        ~~~~~ [ Running - STEP 10] ~~~~~
+
+2023-07-20 16:11:07.890 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.22-10.txt file ~~~~~
+
+2023-07-20 16:11:07.904 - INFO - 
+        ~~~~~ [ Starting Traffic ] ~~~~~
+
+2023-07-20 16:11:07.904 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:11:08.918 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:08.918 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:11:09.917 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:11:14.956 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Background,frameRate,2081
+2023-07-20 16:11:15.954 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,93
+
+2023-07-20 16:11:15.970 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:11:16.969 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,88
+
+2023-07-20 16:11:16.983 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:11:17.983 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,94
+
+2023-07-20 16:11:17.997 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:11:18.996 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,89
+
+2023-07-20 16:11:18.996 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,88
+2023-07-20 16:11:20.010 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:20.010 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,89
+2023-07-20 16:11:21.025 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:22.039 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,93 94
+2023-07-20 16:11:22.039 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:11:35.049 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 93 94,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:11:35.049 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 93;192.168.250.50:9003 Completed 
+2023-07-20 16:11:35.049 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 94;192.168.250.50:9003 Completed 
+2023-07-20 16:11:37.436 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,89 88
+2023-07-20 16:11:37.436 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:11:38.434 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 89 88,txFrames, 0 0,rxFrames, 17529 6673,txPayloadBytes, 0 0,rxPayloadBytes, 17529000 6673000,outOfSequenceFrames 0 0
+
+2023-07-20 16:11:38.434 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 89;192.168.250.43:9000 Completed 
+2023-07-20 16:11:38.434 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 88;192.168.250.43:9000 Completed 
+2023-07-20 16:11:47.467 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-20 16:11:48.464 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:48.480 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_reset
+2023-07-20 16:11:49.479 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:11:49.479 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5600,sourcePort,5600,duration,10,payloadSize,1000,trafficClass,Background,frameRate,2081
+2023-07-20 16:11:50.493 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,95
+
+2023-07-20 16:11:50.493 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5600,destinationPort,5600
+2023-07-20 16:11:51.506 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,90
+
+2023-07-20 16:11:51.506 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.43,destinationPort,5601,sourcePort,5601,duration,10,payloadSize,1000,trafficClass,BestEffort,frameRate,1856
+2023-07-20 16:11:52.520 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,96
+
+2023-07-20 16:11:52.520 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.50,sourcePort,5601,destinationPort,5601
+2023-07-20 16:11:53.519 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,91
+
+2023-07-20 16:11:53.535 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_config,profile,IPTV,direction,send,destination,192.165.100.50,destinationPort,5602,sourcePort,5602,duration,10,payloadSize,1000,trafficClass,Background,frameRate,1856
+2023-07-20 16:11:53.753 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,streamID,20
+
+2023-07-20 16:11:53.753 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_config,profile,IPTV,direction,receive,source,192.165.100.73,sourcePort,5602,destinationPort,5602
+2023-07-20 16:11:54.752 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE,streamID,97
+
+2023-07-20 16:11:54.767 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,90
+2023-07-20 16:11:55.766 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:55.782 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_start,streamID,91
+2023-07-20 16:11:56.779 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-20 16:11:56.796 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_start,streamID,97
+2023-07-20 16:11:57.793 - INFO - PC_ENDPOINT (192.168.250.50:9003) <-- status,COMPLETE
+
+2023-07-20 16:11:58.823 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_send,streamID,95 96
+2023-07-20 16:11:58.823 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:11:59.852 - INFO - ax210l (192.168.250.73:9000) ---> traffic_agent_send,streamID,20
+2023-07-20 16:11:59.852 - INFO - ax210l          <--1 status,RUNNING
+
+2023-07-20 16:12:10.867 - INFO - ax210l          <--1 status,COMPLETE,streamID,20,txActFrames,14356,txFrames,14356,rxFrames,0,txPayloadBytes,14356000,rxPayloadBytes,0,outOfSequenceFrames,0
+
+2023-07-20 16:12:10.867 - INFO - ax210l (192.168.250.73:9000) <--  SEND Stream - 20;192.168.250.73:9000 Completed 
+2023-07-20 16:12:11.834 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 95 96,txFrames,20820 18570 ,rxFrames,0 0 ,txPayloadBytes,20820000 18570000 ,rxPayloadBytes, 0  0 ,outOfSequenceFrames0 0 
+
+2023-07-20 16:12:11.834 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 95;192.168.250.50:9003 Completed 
+2023-07-20 16:12:11.834 - INFO - PC_ENDPOINT (192.168.250.50:9003) <--  SEND Stream - 96;192.168.250.50:9003 Completed 
+2023-07-20 16:12:14.220 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_receive_stop,streamID,91 90
+2023-07-20 16:12:14.220 - INFO - broadcomvht     <--1 status,RUNNING
+
+2023-07-20 16:12:15.219 - INFO - broadcomvht     <--1 status,COMPLETE,streamID, 91 90,txFrames, 0 0,rxFrames, 14462 5165,txPayloadBytes, 0 0,rxPayloadBytes, 14462000 5165000,outOfSequenceFrames 0 0
+
+2023-07-20 16:12:15.219 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 91;192.168.250.43:9000 Completed 
+2023-07-20 16:12:15.219 - INFO - broadcomvht (192.168.250.43:9000) <----  RECV Stream - 90;192.168.250.43:9000 Completed 
+2023-07-20 16:12:21.240 - INFO - PC_ENDPOINT (192.168.250.50:9003) ---> traffic_agent_receive_stop,streamID,97
+2023-07-20 16:12:21.240 - INFO - PC_ENDPOINT     <--1 status,RUNNING
+
+2023-07-20 16:12:22.239 - INFO - PC_ENDPOINT     <--1 status,COMPLETE,streamID, 97,txFrames, 0,rxFrames, 14356,txPayloadBytes, 0,rxPayloadBytes, 14356000,outOfSequenceFrames 0
+
+2023-07-20 16:12:22.239 - INFO - PC_ENDPOINT (192.168.250.50:9003) <----  RECV Stream - 97;192.168.250.50:9003 Completed 
+2023-07-20 16:12:31.256 - INFO - 
+       ----------------RESULT---------------------------
+
+2023-07-20 16:12:31.256 - INFO - BestEffort Phase 1 = 17529000 Bytes | BestEffort Phase 2 = 14462000 Bytes 
+2023-07-20 16:12:31.256 - INFO - Expected  > 90 %
+2023-07-20 16:12:31.256 - INFO - Actual -  82.503 %
+2023-07-20 16:12:31.256 - INFO - TEST RESULT ---> STEP10-FAILED
+2023-07-20 16:12:31.256 - INFO - 
+       ------------------------------------------------
+2023-07-20 16:12:31.256 - INFO - 
+    FINAL TEST RESULT  --->            FAIL
+2023-07-20 16:12:31.272 - INFO -      END: TEST CASE [N-4.2.22]
+2023-07-20 16:12:31.615 - INFO - FAIL
+2023-07-20 16:12:32.161 - INFO - Execution Time [923.01] seconds
+2023-07-20 16:12:32.161 - INFO - ---------------------------------------
+2023-07-20 16:12:32.161 - INFO - Performing Post Test Execution Procedure in PostTestExec.txt file
+2023-07-20 16:12:32.161 - INFO - PostTestExec.txt file does not exist
+2023-07-20 16:12:32.161 - INFO - Stopping FTP server

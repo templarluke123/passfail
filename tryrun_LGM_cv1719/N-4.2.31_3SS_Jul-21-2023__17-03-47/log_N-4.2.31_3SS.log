@@ -1,0 +1,233 @@
+2023-07-21 17:03:47.219 - INFO - ###########################################################
+
+2023-07-21 17:03:47.219 - INFO - WiFiTestSuite Version [10.20.3]
+2023-07-21 17:03:47.219 - INFO - Logging started in file - ./log/N-4.2.31_3SS_Jul-21-2023__17-03-47/log_N-4.2.31_3SS.log
+2023-07-21 17:03:47.219 - INFO - --------------------------------------------------------------------------------
+2023-07-21 17:03:47.219 - INFO - Test Info
+2023-07-21 17:03:47.219 - INFO - --------------------------------------------------------------------------------
+2023-07-21 17:03:47.219 - INFO - Test Prog Name    : N
+2023-07-21 17:03:47.219 - INFO - Test ID           : N-4.2.31_3SS
+2023-07-21 17:03:47.219 - INFO - Test Usermode     : precert 
+2023-07-21 17:03:47.219 - INFO - Test CmdPath      : ..\cmds\WTS-11n
+2023-07-21 17:03:47.219 - INFO - Test InitFile     : AllInitConfig_N.txt
+2023-07-21 17:03:47.219 - INFO - Test TB File      : \802.11n-Testbed-APs.txt
+2023-07-21 17:03:47.219 - INFO - Test Start Time   : 2023-07-21 17:03:47
+2023-07-21 17:03:47.219 - INFO - --------------------------------------------------------------------------------
+2023-07-21 17:03:47.233 - INFO - Initializing FTP server
+2023-07-21 17:03:47.233 - INFO - FTP server path: C:\Wi-FiTestSuite_20.3\bin\log\N-4.2.31_3SS_Jul-21-2023__17-03-47
+2023-07-21 17:03:47.233 - INFO - Starting FTP server on 0.0.0.0:2128
+2023-07-21 17:03:47.749 - INFO - ---------------------------------------
+2023-07-21 17:03:47.749 - INFO - Processing DUTInfo.txt file....
+2023-07-21 17:03:47.749 - INFO - ---------------------------------------
+
+2023-07-21 17:03:47.765 - INFO - Processing MasterTestInfo.xml file....
+2023-07-21 17:03:47.779 - INFO - ---------------------------------------
+
+2023-07-21 17:03:47.904 - INFO - Testplan version=WTS-11n-Testplan-v2.21
+2023-07-21 17:03:47.921 - INFO - 
+         Testcase Init File = AllInitConfig_N.txt 
+
+2023-07-21 17:03:47.921 - INFO - Processing AllInitConfig_N.txt file....
+2023-07-21 17:03:47.921 - INFO - ---------------------------------------
+
+2023-07-21 17:03:48.013 - INFO - stream1 2081 Frames / second
+2023-07-21 17:03:48.013 - INFO - stream2 1856 Frames / second
+2023-07-21 17:03:48.013 - INFO - stream3 1856 Frames / second
+2023-07-21 17:03:48.013 - INFO - stream_trans 281 Frames / second
+2023-07-21 17:03:48.013 - INFO - Processing AllInitCommand_N.txt file....
+2023-07-21 17:03:48.013 - INFO - ---------------------------------------
+
+2023-07-21 17:03:48.138 - INFO - 
+         Testcase Command File = N-4.2.31.txt 
+
+2023-07-21 17:03:48.138 - INFO - START: TEST CASE [N-4.2.31.txt] 
+2023-07-21 17:03:48.138 - INFO - Processing N-4.2.31.txt file....
+2023-07-21 17:03:48.138 - INFO - ---------------------------------------
+
+2023-07-21 17:03:50.338 - INFO - 
+===============Testbed device check==============================
+2023-07-21 17:03:50.338 - INFO - Device [HostAPD <RADIUSSERVER>] control network IP and Port not found, skipping...
+2023-07-21 17:03:50.338 - INFO - Device [Broadcom6715 <AP>] control network IP and Port not found, skipping...
+2023-07-21 17:03:50.338 - INFO - Device [WFAEMT <WFAEMT>] control network IP and Port not found, skipping...
+2023-07-21 17:03:50.338 - INFO - Device [PowerSwitch <POWERSWITCH>] control network IP and Port not found, skipping...
+2023-07-21 17:03:50.743 - INFO - 
+        ~~~~~ Pre-configuration for the test ~~~~~
+
+2023-07-21 17:03:50.743 - INFO - echo ~~~~ $DutMacAddress = 02:e0:92:00:01:31 ~~~~
+2023-07-21 17:03:50.743 - INFO - 
+        ~~~~~ [Inside of 11n-testbed-reset.txt ] ~~~~~
+
+2023-07-21 17:03:50.743 - INFO - 
+        ~~~~~ [ Resetting testbed STA] ~~~~~
+
+2023-07-21 17:03:50.743 - INFO - 
+        ~~~~~ [ Resetting 11n STA 1 Realtek 11n] ~~~~~
+
+2023-07-21 17:03:50.759 - INFO - realtek11n (192.168.250.93:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 17:03:51.930 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,rtl8192s 
+
+2023-07-21 17:03:51.946 - INFO - realtek11n (192.168.250.93:9000) ---> sta_set_11n,interface,rtl8192s ,reset_default,11n
+2023-07-21 17:04:00.244 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:00.244 - INFO - 
+        ~~~~~ [ Resetting 11n STA 2 Broadcomvht as 11n] ~~~~~
+
+2023-07-21 17:04:00.259 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 17:04:00.479 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 17:04:00.479 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 17:04:04.769 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:04.769 - INFO - 
+        ~~~~~ [ Resetting 11n STA 3 AX210L] ~~~~~
+
+2023-07-21 17:04:04.783 - INFO - ax210l (192.168.250.73:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 17:04:05.003 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,wlp2s0
+
+2023-07-21 17:04:05.003 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_11n,interface,wlp2s0,reset_default,11n
+2023-07-21 17:04:11.743 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:11.743 - INFO - 
+        ~~~~~ [ Resetting 11n STA 4  Marvellvht as 11n] ~~~~~
+
+2023-07-21 17:04:11.759 - INFO - marvellvht (192.168.250.63:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 17:04:12.757 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,mlan0
+
+2023-07-21 17:04:12.773 - INFO - marvellvht (192.168.250.63:9000) ---> sta_set_11n,interface,mlan0,reset_default,11n
+2023-07-21 17:04:13.788 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:13.802 - INFO - 
+        ~~~~~ [ Resetting 11n AP 1 Atheros11n] ~~~~~
+
+2023-07-21 17:04:13.802 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_reset_default,NAME,Atheros11n,program,11n,type,Testbed
+2023-07-21 17:04:13.819 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:13.819 - INFO - 
+        ~~~~~ [ Resetting 11n AP 2 Broadcom6715] ~~~~~
+
+2023-07-21 17:04:13.835 - INFO - 
+        ~~~~~ [ Resetting 11n AP 3 Ralink] ~~~~~
+
+2023-07-21 17:04:13.835 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> PowerSwitch,RalinkAP,IPAddress,192.165.100.38,UserName,,Password,,HostName,,PowerSwitchPort,1
+2023-07-21 17:04:13.849 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Access Point Added
+
+2023-07-21 17:04:13.849 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_reset_default,NAME,Ralink,program,11n,type,Testbed
+2023-07-21 17:04:16.907 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-21 17:04:16.907 - INFO - 
+        ~~~~~ Radio Off ~~~~~
+
+2023-07-21 17:04:16.923 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_set_wireless,NAME,Atheros11n,radio,off
+2023-07-21 17:04:17.734 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:17.734 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_set_wireless,NAME,Ralink,radio,off
+2023-07-21 17:04:18.763 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-21 17:04:18.763 - INFO - DUT (192.165.100.13:9000) ---> ca_get_version
+2023-07-21 17:04:19.013 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,version,Sigma-CAPI-10.12.0-06.01.00.1716
+
+2023-07-21 17:04:19.013 - INFO - DUT (192.165.100.13:9000) ---> device_get_info
+2023-07-21 17:04:19.263 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,vendor,MxL,model,WAV700_AP,version,06.01.00.1716
+
+2023-07-21 17:04:19.404 - INFO - 
+        ~~~~~ [ Getting TB STA Version Info ] ~~~~~
+
+2023-07-21 17:04:19.404 - INFO - realtek11n (192.168.250.93:9000) ---> ca_get_version
+2023-07-21 17:04:20.588 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,version,WIN7_WIN8_DUT-v9.1.0
+
+2023-07-21 17:04:20.588 - INFO - realtek11n (192.168.250.93:9000) ---> device_get_info
+2023-07-21 17:04:28.888 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,vendor,Realtek,model,RTL8812BU,version,10.9.1222.2016
+
+2023-07-21 17:04:29.480 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 17:04:29.700 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 17:04:29.700 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 17:04:29.903 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 17:04:30.385 - INFO - marvellvht (192.168.250.63:9000) ---> ca_get_version
+2023-07-21 17:04:31.384 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,version,11N(20:56:54 Jun 23 2020)
+
+2023-07-21 17:04:31.400 - INFO - marvellvht (192.168.250.63:9000) ---> device_get_info
+2023-07-21 17:04:53.914 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,vendor,NXP,model,RD-88W-8997-WIFI-S0 (PCIe8997),version,Sigma 11N 1.05a
+
+2023-07-21 17:04:54.476 - INFO - ax210l (192.168.250.73:9000) ---> ca_get_version
+2023-07-21 17:04:54.694 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Version,WTS-1.0.15-6r2
+
+2023-07-21 17:04:54.694 - INFO - ax210l (192.168.250.73:9000) ---> device_get_info
+2023-07-21 17:04:55.085 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-21 17:04:55.661 - INFO - 
+        ~~~~~ [ Getting TB AP Version Info ] ~~~~~
+
+2023-07-21 17:04:55.661 - INFO - Atheros11n (192.165.100.39:9000) ---> ca_get_version
+2023-07-21 17:04:55.661 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,version,1.0
+
+2023-07-21 17:04:55.661 - INFO - Atheros11n (192.165.100.39:9000) ---> device_get_info
+2023-07-21 17:04:55.693 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,vendor,Qualcomm,model,IPQ8065,version,IPQ8064.ILQ.3.2.r3-0000000XX-P-1
+
+2023-07-21 17:04:56.193 - INFO - Ralink (127.0.0.1:7000) ---> ca_get_version
+2023-07-21 17:04:56.207 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,Wi-Fi Test Suite-10.0.0_beta
+
+2023-07-21 17:04:56.207 - INFO - Ralink (127.0.0.1:7000) ---> device_get_info,NAME,Ralink
+2023-07-21 17:04:56.207 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,vendor,Mediatek,model,MT7615_R2TBV2,version,1.3.5.9
+
+2023-07-21 17:04:56.769 - INFO - 
+        ~~~~~ Sniffer device information ~~~~~
+
+2023-07-21 17:04:56.769 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_get_info
+2023-07-21 17:04:57.503 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+2023-07-21 17:04:57.519 - INFO - echo ~~~~ $latestMapConfVersion = MapConfig_N-v1.0 ~~~~
+2023-07-21 17:04:57.519 - INFO - 
+        ~~~~~ Sniffer map.conf file up-to-date ~~~~~
+
+2023-07-21 17:04:57.533 - INFO - echo ~~~~ $latestWfaSnifferVersion = Wi-FiTestSuite_v10.20.2-11n-v1.0 ~~~~
+2023-07-21 17:04:57.549 - INFO - 
+        ~~~~~ WFA sniffer agent up-to-date ~~~~~
+
+2023-07-21 17:04:57.565 - INFO - echo ~~~~ $latestWiresharkVersion = 3.4.8-2dc33a2-WFA-01 ~~~~
+2023-07-21 17:04:57.565 - INFO - 
+        ~~~~~ Wireshark/Tshark up-to-date ~~~~~
+
+2023-07-21 17:04:57.565 - INFO - echo ~~~~ $latestSnifferDriverVersion = 69EF989827E03C5DF96D6E9 ~~~~
+2023-07-21 17:04:57.581 - INFO - 
+        ~~~~~ Sniffer driver up-to-date ~~~~~
+
+2023-07-21 17:04:57.581 - INFO - echo ~~~~ $latestSnifferFirmwareVersion = 59.98ef5ee8.0 ~~~~
+2023-07-21 17:04:57.581 - INFO - 
+        ~~~~~ Sniffer firmware up-to-date ~~~~~
+
+2023-07-21 17:04:57.596 - INFO - 
+        ~~~~~ UCC: Processing PowerOnOffAPs.txt file ~~~~~
+
+2023-07-21 17:04:57.596 - INFO - 
+        ~~~~~ UCC: Processing APUT-4.2.31.txt file ~~~~~
+
+2023-07-21 17:04:57.596 - INFO - 
+        ~~~~~ [Configuring APUT] ~~~~~
+
+2023-07-21 17:04:57.596 - INFO - DUT (192.165.100.13:9000) ---> ap_set_wireless,NAME,Maxlinear,CHANNEL,6,width,20,SSID,4.2.31,MODE,11ng,RTS,2347,FRGMNT,2346
+2023-07-21 17:04:58.454 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:58.454 - INFO - DUT (192.165.100.13:9000) ---> ap_set_security,NAME,Maxlinear,KEYMGNT,WPA2-PSK,PSK,12345678
+2023-07-21 17:04:58.891 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 17:04:58.891 - INFO - DUT (192.165.100.13:9000) ---> ap_config_commit,NAME,Maxlinear
+2023-07-21 17:05:12.808 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 17:05:12.822 - INFO - 
+        ~~~~~ UCC: Processing AP-WPA2-PSK-Legacy.txt file ~~~~~
+
+2023-07-21 17:05:12.822 - INFO - 
+        ~~~~~ [Configuring Testbed AP in Legacy] ~~~~~
+
+2023-07-21 17:05:12.838 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_set_wireless,NAME,Ralink,CHANNEL,6,SSID,AP2-4.2.31,MODE,11g,RTS,2347,FRGMNT,2346
+2023-07-21 17:05:56.099 - INFO - 
+    FINAL TEST RESULT  --->            FAIL
+2023-07-21 17:05:56.099 - INFO -      END: TEST CASE [N-4.2.31_3SS]
+2023-07-21 17:05:56.473 - INFO - FAIL
+2023-07-21 17:05:56.520 - INFO - Execution Time [129.41] seconds
+2023-07-21 17:05:56.536 - INFO - ---------------------------------------
+2023-07-21 17:05:56.536 - INFO - Performing Post Test Execution Procedure in PostTestExec.txt file
+2023-07-21 17:05:56.536 - INFO - PostTestExec.txt file does not exist
+2023-07-21 17:05:56.536 - INFO - Stopping FTP server

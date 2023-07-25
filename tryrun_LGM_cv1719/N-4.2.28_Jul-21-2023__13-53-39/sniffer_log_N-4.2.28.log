@@ -1,0 +1,63 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.28 
+
+
+Jul:21:2023-13:54:49 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-13:54:50 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:21:2023-13:57:26 | SNIFFER ---> sniffer_control_start,filename,4.2.28_step4,bandwidth,20,channel,36 
+Jul:21:2023-13:57:26 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:58:14 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:58:14 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:58:14 | SNIFFER ---> sniffer_control_field_check,filename,4.2.28_step4,destMac,00:90:4c:0d:d1:85,framename,Qosdata,DRate-No-GT,73 
+Jul:21:2023-13:58:39 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:58:39 | SNIFFER ---> sniffer_frame_check,name,wireShark_wlan,FileName,4.2.28_step4,TxMac,02:e0:92:00:01:41,FrameName,Protection_Frames,Present,Yes 
+Jul:21:2023-13:58:39 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:58:39 | SNIFFER ---> sniffer_control_field_check,filename,4.2.28_step4,destMac,00:50:43:24:b0:14,framename,Qosdata,DRate-No-GT,73 
+Jul:21:2023-13:58:40 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:58:40 | SNIFFER ---> sniffer_control_start,filename,4.2.28_step5,bandwidth,20,channel,36 
+Jul:21:2023-13:58:40 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:59:44 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:59:44 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:59:44 | SNIFFER ---> sniffer_control_field_check,filename,4.2.28_step5,destMac,00:90:4c:0d:d1:85,framename,Qosdata,DRate-No-GT,73 
+Jul:21:2023-14:00:09 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-14:00:09 | SNIFFER ---> sniffer_control_start,filename,4.2.28_step6,bandwidth,20,channel,36 
+Jul:21:2023-14:00:09 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-14:00:58 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-14:00:58 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-14:00:58 | SNIFFER ---> sniffer_control_start,filename,4.2.28_step7,bandwidth,20,channel,36 
+Jul:21:2023-14:01:23 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-14:02:27 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-14:02:27 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-14:02:27 | SNIFFER ---> sniffer_control_field_check,filename,4.2.28_step7,destMac,00:90:4c:0d:d1:85,framename,Qosdata,DRate-No-GT,73 
+Jul:21:2023-14:02:52 | SNIFFER <-- status,COMPLETE,CheckResult,FAIL
+
+ 
+Jul:21:2023-14:02:52 | SNIFFER ---> sniffer_frame_check,name,wireShark_wlan,FileName,4.2.28_step7,TxMac,02:e0:92:00:01:41,FrameName,Protection_Frames,Present,Yes 
+Jul:21:2023-14:02:52 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 

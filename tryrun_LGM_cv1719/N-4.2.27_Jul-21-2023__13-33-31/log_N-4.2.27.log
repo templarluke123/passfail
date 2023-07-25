@@ -1,0 +1,670 @@
+2023-07-21 13:33:31.546 - INFO - ###########################################################
+
+2023-07-21 13:33:31.546 - INFO - WiFiTestSuite Version [10.20.3]
+2023-07-21 13:33:31.548 - INFO - Logging started in file - ./log/N-4.2.27_Jul-21-2023__13-33-31/log_N-4.2.27.log
+2023-07-21 13:33:31.549 - INFO - --------------------------------------------------------------------------------
+2023-07-21 13:33:31.551 - INFO - Test Info
+2023-07-21 13:33:31.552 - INFO - --------------------------------------------------------------------------------
+2023-07-21 13:33:31.552 - INFO - Test Prog Name    : N
+2023-07-21 13:33:31.553 - INFO - Test ID           : N-4.2.27
+2023-07-21 13:33:31.553 - INFO - Test Usermode     : precert 
+2023-07-21 13:33:31.555 - INFO - Test CmdPath      : ..\cmds\WTS-11n
+2023-07-21 13:33:31.555 - INFO - Test InitFile     : AllInitConfig_N.txt
+2023-07-21 13:33:31.556 - INFO - Test TB File      : \802.11n-Testbed-APs.txt
+2023-07-21 13:33:31.558 - INFO - Test Start Time   : 2023-07-21 13:33:31
+2023-07-21 13:33:31.558 - INFO - --------------------------------------------------------------------------------
+2023-07-21 13:33:31.559 - INFO - Initializing FTP server
+2023-07-21 13:33:31.559 - INFO - FTP server path: C:\Wi-FiTestSuite_20.3\bin\log\N-4.2.27_Jul-21-2023__13-33-31
+2023-07-21 13:33:31.562 - INFO - Starting FTP server on 0.0.0.0:2128
+2023-07-21 13:33:32.062 - INFO - ---------------------------------------
+2023-07-21 13:33:32.065 - INFO - Processing DUTInfo.txt file....
+2023-07-21 13:33:32.068 - INFO - ---------------------------------------
+
+2023-07-21 13:33:32.088 - INFO - Processing MasterTestInfo.xml file....
+2023-07-21 13:33:32.091 - INFO - ---------------------------------------
+
+2023-07-21 13:33:32.226 - INFO - Testplan version=WTS-11n-Testplan-v2.21
+2023-07-21 13:33:32.246 - INFO - 
+         Testcase Init File = AllInitConfig_N.txt 
+
+2023-07-21 13:33:32.247 - INFO - Processing AllInitConfig_N.txt file....
+2023-07-21 13:33:32.247 - INFO - ---------------------------------------
+
+2023-07-21 13:33:32.329 - INFO - stream1 2081 Frames / second
+2023-07-21 13:33:32.331 - INFO - stream2 1856 Frames / second
+2023-07-21 13:33:32.332 - INFO - stream3 1856 Frames / second
+2023-07-21 13:33:32.332 - INFO - stream_trans 281 Frames / second
+2023-07-21 13:33:32.335 - INFO - Processing AllInitCommand_N.txt file....
+2023-07-21 13:33:32.335 - INFO - ---------------------------------------
+
+2023-07-21 13:33:32.450 - INFO - 
+         Testcase Command File = N-4.2.27.txt 
+
+2023-07-21 13:33:32.453 - INFO - START: TEST CASE [N-4.2.27.txt] 
+2023-07-21 13:33:32.453 - INFO - Processing N-4.2.27.txt file....
+2023-07-21 13:33:32.453 - INFO - ---------------------------------------
+
+2023-07-21 13:33:34.765 - INFO - 
+===============Testbed device check==============================
+2023-07-21 13:33:34.766 - INFO - Device [HostAPD <RADIUSSERVER>] control network IP and Port not found, skipping...
+2023-07-21 13:33:34.769 - INFO - Device [Broadcom6715 <AP>] control network IP and Port not found, skipping...
+2023-07-21 13:33:34.773 - INFO - Device [WFAEMT <WFAEMT>] control network IP and Port not found, skipping...
+2023-07-21 13:33:34.776 - INFO - Device [PowerSwitch <POWERSWITCH>] control network IP and Port not found, skipping...
+2023-07-21 13:33:35.206 - INFO - 
+        ~~~~~ Pre-configuration for the test ~~~~~
+
+2023-07-21 13:33:35.210 - INFO - echo ~~~~ $DutMacAddress = 02:e0:92:00:01:31 ~~~~
+2023-07-21 13:33:35.211 - INFO - 
+        ~~~~~ [Inside of 11n-testbed-reset.txt ] ~~~~~
+
+2023-07-21 13:33:35.216 - INFO - 
+        ~~~~~ [ Resetting testbed STA] ~~~~~
+
+2023-07-21 13:33:35.219 - INFO - 
+        ~~~~~ [ Resetting 11n STA 1 Realtek 11n] ~~~~~
+
+2023-07-21 13:33:35.223 - INFO - realtek11n (192.168.250.93:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:33:36.411 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,rtl8192s 
+
+2023-07-21 13:33:36.418 - INFO - realtek11n (192.168.250.93:9000) ---> sta_set_11n,interface,rtl8192s ,reset_default,11n
+2023-07-21 13:33:44.713 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE
+
+2023-07-21 13:33:44.720 - INFO - 
+        ~~~~~ [ Resetting 11n STA 2 Broadcomvht as 11n] ~~~~~
+
+2023-07-21 13:33:44.727 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:33:44.931 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:33:44.938 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:33:49.224 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:33:49.232 - INFO - 
+        ~~~~~ [ Resetting 11n STA 3 AX210L] ~~~~~
+
+2023-07-21 13:33:49.239 - INFO - ax210l (192.168.250.73:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:33:49.450 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,wlp2s0
+
+2023-07-21 13:33:49.457 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_11n,interface,wlp2s0,reset_default,11n
+2023-07-21 13:33:56.069 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-21 13:33:56.075 - INFO - 
+        ~~~~~ [ Resetting 11n STA 4  Marvellvht as 11n] ~~~~~
+
+2023-07-21 13:33:56.084 - INFO - marvellvht (192.168.250.63:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:33:57.091 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,mlan0
+
+2023-07-21 13:33:57.098 - INFO - marvellvht (192.168.250.63:9000) ---> sta_set_11n,interface,mlan0,reset_default,11n
+2023-07-21 13:33:58.121 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE
+
+2023-07-21 13:33:58.128 - INFO - 
+        ~~~~~ [ Resetting 11n AP 1 Atheros11n] ~~~~~
+
+2023-07-21 13:33:58.134 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_reset_default,NAME,Atheros11n,program,11n,type,Testbed
+2023-07-21 13:33:58.144 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-21 13:33:58.151 - INFO - 
+        ~~~~~ [ Resetting 11n AP 2 Broadcom6715] ~~~~~
+
+2023-07-21 13:33:58.157 - INFO - 
+        ~~~~~ [ Resetting 11n AP 3 Ralink] ~~~~~
+
+2023-07-21 13:33:58.164 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> PowerSwitch,RalinkAP,IPAddress,192.165.100.38,UserName,,Password,,HostName,,PowerSwitchPort,1
+2023-07-21 13:33:58.174 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Access Point Added
+
+2023-07-21 13:33:58.180 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_reset_default,NAME,Ralink,program,11n,type,Testbed
+2023-07-21 13:34:01.234 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-21 13:34:01.242 - INFO - 
+        ~~~~~ Radio Off ~~~~~
+
+2023-07-21 13:34:01.249 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_set_wireless,NAME,Atheros11n,radio,off
+2023-07-21 13:34:02.078 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-21 13:34:02.085 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_set_wireless,NAME,Ralink,radio,off
+2023-07-21 13:34:03.104 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-21 13:34:03.111 - INFO - DUT (192.165.100.13:9000) ---> ca_get_version
+2023-07-21 13:34:03.342 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,version,Sigma-CAPI-10.12.0-06.01.00.1716
+
+2023-07-21 13:34:03.352 - INFO - DUT (192.165.100.13:9000) ---> device_get_info
+2023-07-21 13:34:03.584 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,vendor,MxL,model,WAV700_AP,version,06.01.00.1716
+
+2023-07-21 13:34:03.736 - INFO - 
+        ~~~~~ [ Getting TB STA Version Info ] ~~~~~
+
+2023-07-21 13:34:03.740 - INFO - realtek11n (192.168.250.93:9000) ---> ca_get_version
+2023-07-21 13:34:04.923 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,version,WIN7_WIN8_DUT-v9.1.0
+
+2023-07-21 13:34:04.930 - INFO - realtek11n (192.168.250.93:9000) ---> device_get_info
+2023-07-21 13:34:13.226 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,vendor,Realtek,model,RTL8812BU,version,10.9.1222.2016
+
+2023-07-21 13:34:13.816 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:34:14.019 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:34:14.026 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:34:14.230 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:34:14.743 - INFO - marvellvht (192.168.250.63:9000) ---> ca_get_version
+2023-07-21 13:34:15.746 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,version,11N(20:56:54 Jun 23 2020)
+
+2023-07-21 13:34:15.753 - INFO - marvellvht (192.168.250.63:9000) ---> device_get_info
+2023-07-21 13:34:38.267 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,vendor,NXP,model,RD-88W-8997-WIFI-S0 (PCIe8997),version,Sigma 11N 1.05a
+
+2023-07-21 13:34:38.826 - INFO - ax210l (192.168.250.73:9000) ---> ca_get_version
+2023-07-21 13:34:39.029 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Version,WTS-1.0.15-6r2
+
+2023-07-21 13:34:39.036 - INFO - ax210l (192.168.250.73:9000) ---> device_get_info
+2023-07-21 13:34:39.426 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-21 13:34:40.016 - INFO - 
+        ~~~~~ [ Getting TB AP Version Info ] ~~~~~
+
+2023-07-21 13:34:40.019 - INFO - Atheros11n (192.165.100.39:9000) ---> ca_get_version
+2023-07-21 13:34:40.026 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,version,1.0
+
+2023-07-21 13:34:40.029 - INFO - Atheros11n (192.165.100.39:9000) ---> device_get_info
+2023-07-21 13:34:40.066 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,vendor,Qualcomm,model,IPQ8065,version,IPQ8064.ILQ.3.2.r3-0000000XX-P-1
+
+2023-07-21 13:34:40.559 - INFO - Ralink (127.0.0.1:7000) ---> ca_get_version
+2023-07-21 13:34:40.563 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,Wi-Fi Test Suite-10.0.0_beta
+
+2023-07-21 13:34:40.568 - INFO - Ralink (127.0.0.1:7000) ---> device_get_info,NAME,Ralink
+2023-07-21 13:34:40.569 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,vendor,Mediatek,model,MT7615_R2TBV2,version,1.3.5.9
+
+2023-07-21 13:34:41.138 - INFO - 
+        ~~~~~ Sniffer device information ~~~~~
+
+2023-07-21 13:34:41.141 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_get_info
+2023-07-21 13:34:41.813 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+2023-07-21 13:34:41.822 - INFO - echo ~~~~ $latestMapConfVersion = MapConfig_N-v1.0 ~~~~
+2023-07-21 13:34:41.832 - INFO - 
+        ~~~~~ Sniffer map.conf file up-to-date ~~~~~
+
+2023-07-21 13:34:41.844 - INFO - echo ~~~~ $latestWfaSnifferVersion = Wi-FiTestSuite_v10.20.2-11n-v1.0 ~~~~
+2023-07-21 13:34:41.854 - INFO - 
+        ~~~~~ WFA sniffer agent up-to-date ~~~~~
+
+2023-07-21 13:34:41.864 - INFO - echo ~~~~ $latestWiresharkVersion = 3.4.8-2dc33a2-WFA-01 ~~~~
+2023-07-21 13:34:41.869 - INFO - 
+        ~~~~~ Wireshark/Tshark up-to-date ~~~~~
+
+2023-07-21 13:34:41.875 - INFO - echo ~~~~ $latestSnifferDriverVersion = 69EF989827E03C5DF96D6E9 ~~~~
+2023-07-21 13:34:41.881 - INFO - 
+        ~~~~~ Sniffer driver up-to-date ~~~~~
+
+2023-07-21 13:34:41.887 - INFO - echo ~~~~ $latestSnifferFirmwareVersion = 59.98ef5ee8.0 ~~~~
+2023-07-21 13:34:41.891 - INFO - 
+        ~~~~~ Sniffer firmware up-to-date ~~~~~
+
+2023-07-21 13:34:41.898 - INFO - 
+        ~~~~~ UCC: Processing PowerOnOffAPs.txt file ~~~~~
+
+2023-07-21 13:34:41.904 - INFO - 
+        ~~~~~ UCC: Processing APUT-No-Security.txt file ~~~~~
+
+2023-07-21 13:34:41.907 - INFO - 
+        ~~~~~ [Configuring APUT] ~~~~~
+
+2023-07-21 13:34:41.911 - INFO - DUT (192.165.100.13:9000) ---> ap_set_wireless,NAME,Maxlinear,CHANNEL,1,width,40,SSID,4.2.27,MODE,11ng,RTS,2347,FRGMNT,2346
+2023-07-21 13:34:42.719 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 13:34:42.726 - INFO - DUT (192.165.100.13:9000) ---> ap_set_security,NAME,Maxlinear,KEYMGNT,NONE
+2023-07-21 13:34:43.049 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 13:34:43.055 - INFO - DUT (192.165.100.13:9000) ---> ap_config_commit,NAME,Maxlinear
+2023-07-21 13:34:58.210 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-21 13:34:58.224 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:34:58.233 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:34:58.240 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:34:58.440 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:34:58.447 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:34:58.651 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:34:59.213 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:34:59.417 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:34:59.424 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:35:05.732 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:05.739 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:35:10.026 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:10.032 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,20
+2023-07-21 13:35:10.246 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:10.253 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:35:10.467 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:10.473 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:35:10.687 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:10.693 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:35:10.907 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:10.914 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,7
+2023-07-21 13:35:11.127 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:11.132 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:35:11.346 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:35:11.354 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:35:11.566 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:11.572 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:35:11.786 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:11.792 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:35:21.828 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:35:31.836 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:35:32.042 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:35:32.049 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:35:32.253 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:35:32.259 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:35:32.463 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:35:32.470 - INFO - Sleep... 10 seconds
+2023-07-21 13:35:42.476 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:35:43.499 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,14
+
+2023-07-21 13:35:43.506 - INFO - Sleep... 10 seconds
+2023-07-21 13:35:53.513 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,14
+2023-07-21 13:35:56.615 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:35:56.622 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:35:57.644 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,15
+
+2023-07-21 13:35:57.651 - INFO - Sleep... 10 seconds
+2023-07-21 13:36:07.657 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,15
+2023-07-21 13:36:10.717 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:36:10.733 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.27-2SS.txt file ~~~~~
+
+2023-07-21 13:36:10.740 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:36:10.747 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:36:10.753 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:36:10.957 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:36:10.963 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:36:11.177 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:36:11.676 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:36:11.878 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:36:11.885 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:36:18.198 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:18.204 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:36:22.494 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:22.502 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,20
+2023-07-21 13:36:22.706 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:22.711 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:36:22.915 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:22.921 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:36:23.125 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:23.131 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:36:23.336 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:23.342 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,15
+2023-07-21 13:36:23.546 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:23.553 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:36:23.756 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:36:23.763 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:36:23.976 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:23.983 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:36:24.187 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:24.193 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:36:34.230 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:36:44.236 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:36:44.440 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:36:44.447 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:36:44.651 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:36:44.657 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:36:44.861 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:36:44.868 - INFO - Sleep... 10 seconds
+2023-07-21 13:36:54.875 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:36:55.897 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,16
+
+2023-07-21 13:36:55.904 - INFO - Sleep... 10 seconds
+2023-07-21 13:37:05.910 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,16
+2023-07-21 13:37:09.016 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:37:09.025 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:37:10.046 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,17
+
+2023-07-21 13:37:10.055 - INFO - Sleep... 10 seconds
+2023-07-21 13:37:20.059 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,17
+2023-07-21 13:37:23.118 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:37:23.132 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.27-3SS.txt file ~~~~~
+
+2023-07-21 13:37:23.141 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:37:23.147 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:37:23.154 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:37:23.351 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:37:23.358 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:37:23.561 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:37:24.144 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:37:24.346 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:37:24.354 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:37:30.660 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:30.667 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:37:34.943 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:34.950 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,20
+2023-07-21 13:37:35.153 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:35.158 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:37:35.362 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:35.368 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:37:35.572 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:35.578 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:37:35.782 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:35.789 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,23
+2023-07-21 13:37:35.993 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:36.000 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:37:36.203 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:37:36.210 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:37:36.413 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:36.418 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:37:36.622 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:36.628 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:37:46.667 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:37:56.674 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:37:56.878 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:37:56.884 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:37:57.085 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:37:57.092 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:37:57.296 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:37:57.302 - INFO - Sleep... 10 seconds
+2023-07-21 13:38:07.309 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:38:08.332 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,18
+
+2023-07-21 13:38:08.338 - INFO - Sleep... 10 seconds
+2023-07-21 13:38:18.341 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,18
+2023-07-21 13:38:21.446 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:38:21.446 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:38:22.476 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,19
+
+2023-07-21 13:38:22.476 - INFO - Sleep... 10 seconds
+2023-07-21 13:38:32.480 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,19
+2023-07-21 13:38:35.539 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:38:35.553 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:38:35.553 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:38:35.569 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:38:35.788 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:38:35.788 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:38:35.990 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:38:36.490 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:38:36.709 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:38:36.709 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:38:43.015 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:43.030 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:38:47.306 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:47.306 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,40
+2023-07-21 13:38:47.525 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:47.525 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:38:47.743 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:47.743 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:38:47.961 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:47.961 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:38:48.180 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:48.180 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,7
+2023-07-21 13:38:48.398 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:48.398 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:38:48.601 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:38:48.601 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:38:48.819 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:48.819 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:38:49.039 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:38:49.039 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:38:59.072 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:39:09.092 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:39:09.295 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:39:09.295 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:39:09.513 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:39:09.513 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:39:09.732 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:39:09.732 - INFO - Sleep... 10 seconds
+2023-07-21 13:39:19.736 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:39:20.750 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,20
+
+2023-07-21 13:39:20.765 - INFO - Sleep... 10 seconds
+2023-07-21 13:39:30.769 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,20
+2023-07-21 13:39:33.875 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:39:33.875 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:39:34.888 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,21
+
+2023-07-21 13:39:34.904 - INFO - Sleep... 10 seconds
+2023-07-21 13:39:44.908 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,21
+2023-07-21 13:39:47.967 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:39:47.983 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.27-2SS.txt file ~~~~~
+
+2023-07-21 13:39:47.983 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:39:47.999 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:39:47.999 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:39:48.217 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:39:48.217 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:39:48.436 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:39:48.982 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:39:49.200 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:39:49.200 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:39:55.520 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:39:55.520 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:39:59.812 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:39:59.812 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,40
+2023-07-21 13:40:00.030 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:00.030 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:40:00.249 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:00.249 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:40:00.451 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:00.451 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:40:00.671 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:00.671 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,15
+2023-07-21 13:40:00.888 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:00.888 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:40:01.107 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:40:01.107 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:40:01.325 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:01.325 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:40:01.559 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:01.559 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:40:11.595 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:40:21.614 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:40:21.816 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:40:21.816 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:40:22.036 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:40:22.036 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:40:22.255 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:40:22.255 - INFO - Sleep... 10 seconds
+2023-07-21 13:40:32.259 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:40:33.275 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,22
+
+2023-07-21 13:40:33.275 - INFO - Sleep... 10 seconds
+2023-07-21 13:40:43.296 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,22
+2023-07-21 13:40:46.401 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:40:46.417 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:40:47.436 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,23
+
+2023-07-21 13:40:47.436 - INFO - Sleep... 10 seconds
+2023-07-21 13:40:57.440 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,23
+2023-07-21 13:41:00.497 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:41:00.513 - INFO - 
+        ~~~~~ UCC: Processing N-4.2.27-3SS.txt file ~~~~~
+
+2023-07-21 13:41:00.513 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.27.txt file ~~~~~
+
+2023-07-21 13:41:00.529 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-21 13:41:00.529 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-21 13:41:00.747 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-21 13:41:00.747 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-21 13:41:00.966 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-21 13:41:01.542 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-21 13:41:01.762 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-21 13:41:01.762 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,ZeroConfig,mode,11ng,wmm,on,HT,off
+2023-07-21 13:41:08.069 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:08.085 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-21 13:41:12.361 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:12.378 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,40
+2023-07-21 13:41:12.595 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:12.595 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-21 13:41:12.815 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:12.815 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-21 13:41:13.033 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:13.033 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-21 13:41:13.252 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:13.252 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs_fixedrate,23
+2023-07-21 13:41:13.454 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:13.454 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-21 13:41:13.673 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-21 13:41:13.673 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_encryption,interface,eth0,ssid,4.2.27,encpType,none
+2023-07-21 13:41:13.891 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:13.891 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-21 13:41:14.095 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:14.095 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,4.2.27
+2023-07-21 13:41:24.128 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-21 13:41:34.148 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-21 13:41:34.367 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-21 13:41:34.367 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-21 13:41:34.585 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:31
+
+2023-07-21 13:41:34.585 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-21 13:41:34.803 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-21 13:41:34.803 - INFO - Sleep... 10 seconds
+2023-07-21 13:41:44.806 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,4,duration,10
+2023-07-21 13:41:45.821 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,24
+
+2023-07-21 13:41:45.836 - INFO - Sleep... 10 seconds
+2023-07-21 13:41:55.841 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,24
+2023-07-21 13:41:58.947 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,40,replies,40,consectimeout,0
+
+2023-07-21 13:41:58.947 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,10
+2023-07-21 13:41:59.976 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,25
+
+2023-07-21 13:41:59.976 - INFO - Sleep... 10 seconds
+2023-07-21 13:42:09.980 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,25
+2023-07-21 13:42:13.039 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-21 13:42:13.039 - INFO - 
+    FINAL TEST RESULT  --->            PASS
+2023-07-21 13:42:13.039 - INFO -      END: TEST CASE [N-4.2.27]
+2023-07-21 13:42:13.398 - INFO - PASS
+2023-07-21 13:42:13.398 - INFO - Execution Time [521.96] seconds
+2023-07-21 13:42:13.414 - INFO - ---------------------------------------
+2023-07-21 13:42:13.414 - INFO - Performing Post Test Execution Procedure in PostTestExec.txt file
+2023-07-21 13:42:13.414 - INFO - PostTestExec.txt file does not exist
+2023-07-21 13:42:13.414 - INFO - Stopping FTP server

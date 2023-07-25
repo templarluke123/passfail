@@ -1,0 +1,127 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.22 
+
+
+Jul:20:2023-15:58:17 | SNIFFER ---> sniffer_get_info, 
+Jul:20:2023-15:58:18 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:20:2023-15:58:18 | SNIFFER ---> sniffer_control_start,filename,SnifferTrace_N-4.2.22,channel,36 
+Jul:20:2023-15:58:18 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-16:01:23 | SNIFFER ---> sniffer_control_stop, 
+Jul:20:2023-16:01:23 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:20:2023-16:01:23 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_CWmin,4 
+Jul:20:2023-16:01:48 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:48 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_CWmax,10 
+Jul:20:2023-16:01:49 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:49 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_AIFSN,7 
+Jul:20:2023-16:01:49 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:49 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_TXOP,0 
+Jul:20:2023-16:01:49 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:49 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BK_ACM,no 
+Jul:20:2023-16:01:49 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:49 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_CWmin,4 
+Jul:20:2023-16:01:50 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:50 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_CWmax,10 
+Jul:20:2023-16:01:50 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:50 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_AIFSN,3 
+Jul:20:2023-16:01:50 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:50 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_TXOP,0 
+Jul:20:2023-16:01:50 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:50 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,BE_ACM,no 
+Jul:20:2023-16:01:50 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:50 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_CWmin,3 
+Jul:20:2023-16:01:51 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:51 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_CWmax,4 
+Jul:20:2023-16:01:51 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:51 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_AIFSN,2 
+Jul:20:2023-16:01:51 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:51 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_TXOP,94 
+Jul:20:2023-16:01:51 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:51 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VI_ACM,no 
+Jul:20:2023-16:01:51 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:51 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_CWmin,2 
+Jul:20:2023-16:01:52 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:52 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_CWmax,3 
+Jul:20:2023-16:01:52 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:52 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_AIFSN,2 
+Jul:20:2023-16:01:52 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:52 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_TXOP,47 
+Jul:20:2023-16:01:52 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:52 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,framename,beacon,VO_ACM,no 
+Jul:20:2023-16:01:53 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:53 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,00:90:4c:0d:d1:85,framename,probereq,wmmie,0 
+Jul:20:2023-16:01:53 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:53 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,3c:e9:f7:c0:1c:64,framename,probereq,wmmie,0 
+Jul:20:2023-16:01:53 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:53 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,00:90:4c:0d:d1:85,framename,proberesp,wmmie,1 
+Jul:20:2023-16:01:53 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:53 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,3c:e9:f7:c0:1c:64,framename,proberesp,wmmie,1 
+Jul:20:2023-16:01:53 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:53 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,00:90:4c:0d:d1:85,bssid,02:e0:92:00:01:41,framename,assoreq,wmmie,1 
+Jul:20:2023-16:01:54 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:54 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,3c:e9:f7:c0:1c:64,bssid,02:e0:92:00:01:41,framename,assoreq,wmmie,1 
+Jul:20:2023-16:01:54 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:54 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,00:90:4c:0d:d1:85,framename,assoresp,wmmie,1 
+Jul:20:2023-16:01:54 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:20:2023-16:01:54 | SNIFFER ---> sniffer_control_field_check,filename,SnifferTrace_N-4.2.22,srcmac,02:e0:92:00:01:41,dstmac,3c:e9:f7:c0:1c:64,framename,assoresp,wmmie,1 
+Jul:20:2023-16:01:54 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 

@@ -1,0 +1,33 @@
+{
+    "TmsTestResult": {
+        "PrimaryTestbed": {
+            "Category": "", 
+            "VendorDeviceId": "", 
+            "company": "", 
+            "firmware": "", 
+            "model": ""
+        }, 
+        "TestResult": {
+            "Device": "DUT", 
+            "Message": "OK", 
+            "Result": "PASS"
+        }, 
+        "ExecutionTimeInSeconds": "0", 
+        "TimeStamp": "2023-07-21T17-21-16Z+08:00", 
+        "TmsEventId": "XXXXX", 
+        "LogFileName": "ftp://wfaftp.tms.wi-fi.org/XXXXX/MxL_WAV700_AP/N-4.2.34/2023-07-21T17-21-16Z", 
+        "TestCaseId": "N-4.2.34", 
+        "Mode": "Sigma", 
+        "ProgramName": "N", 
+        "PrimaryTestbedParticipantName": "TestbedCompanyName", 
+        "Dut": {
+            "Category": "AP", 
+            "VendorDeviceId": "MxL_WAV700_AP", 
+            "company": "MxL", 
+            "firmware": "06.01.00.1716", 
+            "model": "WAV700_AP"
+        }, 
+        "TMSversion": "2.0", 
+        "DutParticipantName": "DUTCompanyName"
+    }
+}

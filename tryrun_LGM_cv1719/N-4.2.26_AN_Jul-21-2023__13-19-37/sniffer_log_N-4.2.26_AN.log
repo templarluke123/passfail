@@ -1,0 +1,115 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.26_AN 
+
+
+Jul:21:2023-13:20:47 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-13:20:48 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:21:2023-13:21:16 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step1,bandwidth,40,channel,36 
+Jul:21:2023-13:21:16 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:21:31 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:21:31 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:21:31 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,ChannelWidth,40 
+Jul:21:2023-13:21:56 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:56 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,SGI20,1 
+Jul:21:2023-13:21:56 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:56 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,SGI40,1 
+Jul:21:2023-13:21:56 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:56 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,McsSet,3 
+Jul:21:2023-13:21:56 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:56 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,MCS32,1 
+Jul:21:2023-13:21:57 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:57 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,STBC_Tx,1 
+Jul:21:2023-13:21:57 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:57 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step1,srcMac,02:e0:92:00:01:41,framename,Beacon,STBC_Rx,0 
+Jul:21:2023-13:21:57 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:21:57 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step2,bandwidth,40,channel,36 
+Jul:21:2023-13:21:57 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:25:08 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:25:08 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:25:08 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step2,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,0 
+Jul:21:2023-13:25:33 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:25:33 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step2,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,3 
+Jul:21:2023-13:25:33 | SNIFFER <-- status,COMPLETE,CheckResult,FAIL
+
+ 
+Jul:21:2023-13:27:56 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step6,bandwidth,20,channel,36 
+Jul:21:2023-13:27:57 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:28:06 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:28:06 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:28:16 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step6,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,3 
+Jul:21:2023-13:28:31 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:28:45 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step8,bandwidth,20,channel,36 
+Jul:21:2023-13:28:46 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:28:55 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:28:55 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:28:55 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step8,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,3 
+Jul:21:2023-13:29:20 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:30:13 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step9,bandwidth,20,channel,36 
+Jul:21:2023-13:30:14 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:30:23 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:30:23 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:30:28 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step9,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,0-2 
+Jul:21:2023-13:30:48 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:30:48 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step9,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,3 
+Jul:21:2023-13:30:48 | SNIFFER <-- status,COMPLETE,CheckResult,FAIL
+
+ 
+Jul:21:2023-13:31:22 | SNIFFER ---> sniffer_control_start,filename,4.2.26_step10,bandwidth,20,channel,36 
+Jul:21:2023-13:31:22 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:31:31 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-13:31:31 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-13:31:36 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step10,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,0 
+Jul:21:2023-13:31:56 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 
+Jul:21:2023-13:31:56 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.26_step10,srcMac,02:e0:92:00:01:41,framename,Beacon,HtProtection,3 
+Jul:21:2023-13:31:56 | SNIFFER <-- status,COMPLETE,CheckResult,FAIL
+
+ 

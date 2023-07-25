@@ -1,0 +1,19 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.30_2SS 
+
+
+Jul:21:2023-16:59:44 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-16:59:44 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:21:2023-17:00:46 | SNIFFER ---> sniffer_control_start,filename,4.2.30_step4,bandwidth,20,channel,1 
+Jul:21:2023-17:00:46 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-17:02:47 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-17:02:47 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-17:02:47 | SNIFFER ---> sniffer_control_field_check,name,wireShark_wlan,filename,4.2.30_step4,bssid,02:e0:92:00:01:31,srcMac,00:90:4c:0d:d1:85,AMSDU_Length,2347 
+Jul:21:2023-17:03:12 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 

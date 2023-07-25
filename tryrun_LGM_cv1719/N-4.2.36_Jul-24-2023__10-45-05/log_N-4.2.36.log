@@ -1,0 +1,311 @@
+2023-07-24 10:45:05.219 - INFO - ###########################################################
+
+2023-07-24 10:45:05.219 - INFO - WiFiTestSuite Version [10.20.3]
+2023-07-24 10:45:05.219 - INFO - Logging started in file - ./log/N-4.2.36_Jul-24-2023__10-45-05/log_N-4.2.36.log
+2023-07-24 10:45:05.219 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:45:05.219 - INFO - Test Info
+2023-07-24 10:45:05.219 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:45:05.219 - INFO - Test Prog Name    : N
+2023-07-24 10:45:05.219 - INFO - Test ID           : N-4.2.36
+2023-07-24 10:45:05.219 - INFO - Test Usermode     : precert 
+2023-07-24 10:45:05.219 - INFO - Test CmdPath      : ..\cmds\WTS-11n
+2023-07-24 10:45:05.219 - INFO - Test InitFile     : AllInitConfig_N.txt
+2023-07-24 10:45:05.219 - INFO - Test TB File      : \802.11n-Testbed-APs.txt
+2023-07-24 10:45:05.219 - INFO - Test Start Time   : 2023-07-24 10:45:05
+2023-07-24 10:45:05.234 - INFO - --------------------------------------------------------------------------------
+2023-07-24 10:45:05.234 - INFO - Initializing FTP server
+2023-07-24 10:45:05.234 - INFO - FTP server path: C:\Wi-FiTestSuite_20.3\bin\log\N-4.2.36_Jul-24-2023__10-45-05
+2023-07-24 10:45:05.234 - INFO - Starting FTP server on 0.0.0.0:2128
+2023-07-24 10:45:05.750 - INFO - ---------------------------------------
+2023-07-24 10:45:05.750 - INFO - Processing DUTInfo.txt file....
+2023-07-24 10:45:05.750 - INFO - ---------------------------------------
+
+2023-07-24 10:45:05.750 - INFO - Processing MasterTestInfo.xml file....
+2023-07-24 10:45:05.765 - INFO - ---------------------------------------
+
+2023-07-24 10:45:05.874 - INFO - Testplan version=WTS-11n-Testplan-v2.21
+2023-07-24 10:45:05.905 - INFO - 
+         Testcase Init File = AllInitConfig_N.txt 
+
+2023-07-24 10:45:05.905 - INFO - Processing AllInitConfig_N.txt file....
+2023-07-24 10:45:05.905 - INFO - ---------------------------------------
+
+2023-07-24 10:45:06.015 - INFO - stream1 2081 Frames / second
+2023-07-24 10:45:06.029 - INFO - stream2 1856 Frames / second
+2023-07-24 10:45:06.029 - INFO - stream3 1856 Frames / second
+2023-07-24 10:45:06.029 - INFO - stream_trans 281 Frames / second
+2023-07-24 10:45:06.029 - INFO - Processing AllInitCommand_N.txt file....
+2023-07-24 10:45:06.029 - INFO - ---------------------------------------
+
+2023-07-24 10:45:06.154 - INFO - 
+         Testcase Command File = N-4.2.36.txt 
+
+2023-07-24 10:45:06.154 - INFO - START: TEST CASE [N-4.2.36.txt] 
+2023-07-24 10:45:06.154 - INFO - Processing N-4.2.36.txt file....
+2023-07-24 10:45:06.154 - INFO - ---------------------------------------
+
+2023-07-24 10:45:08.276 - INFO - 
+===============Testbed device check==============================
+2023-07-24 10:45:08.276 - INFO - Device [HostAPD <RADIUSSERVER>] control network IP and Port not found, skipping...
+2023-07-24 10:45:08.276 - INFO - Device [Broadcom6715 <AP>] control network IP and Port not found, skipping...
+2023-07-24 10:45:08.276 - INFO - Device [WFAEMT <WFAEMT>] control network IP and Port not found, skipping...
+2023-07-24 10:45:08.276 - INFO - Device [PowerSwitch <POWERSWITCH>] control network IP and Port not found, skipping...
+2023-07-24 10:45:08.651 - INFO - 
+        ~~~~~ Pre-configuration for the test ~~~~~
+
+2023-07-24 10:45:08.651 - INFO - echo ~~~~ $DutMacAddress = 02:e0:92:00:01:41 ~~~~
+2023-07-24 10:45:08.667 - INFO - 
+        ~~~~~ [Inside of 11n-testbed-reset.txt ] ~~~~~
+
+2023-07-24 10:45:08.667 - INFO - 
+        ~~~~~ [ Resetting testbed STA] ~~~~~
+
+2023-07-24 10:45:08.667 - INFO - 
+        ~~~~~ [ Resetting 11n STA 1 Realtek 11n] ~~~~~
+
+2023-07-24 10:45:08.681 - INFO - realtek11n (192.168.250.93:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-24 10:45:10.819 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,rtl8192s 
+
+2023-07-24 10:45:10.819 - INFO - realtek11n (192.168.250.93:9000) ---> sta_set_11n,interface,rtl8192s ,reset_default,11n
+2023-07-24 10:45:20.085 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:20.085 - INFO - 
+        ~~~~~ [ Resetting 11n STA 2 Broadcomvht as 11n] ~~~~~
+
+2023-07-24 10:45:20.085 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-24 10:45:20.303 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-24 10:45:20.303 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,reset_default,11n
+2023-07-24 10:45:24.578 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:24.594 - INFO - 
+        ~~~~~ [ Resetting 11n STA 3 AX210L] ~~~~~
+
+2023-07-24 10:45:24.594 - INFO - ax210l (192.168.250.73:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-24 10:45:24.796 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,wlp2s0
+
+2023-07-24 10:45:24.796 - INFO - ax210l (192.168.250.73:9000) ---> sta_set_11n,interface,wlp2s0,reset_default,11n
+2023-07-24 10:45:31.395 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:31.395 - INFO - 
+        ~~~~~ [ Resetting 11n STA 4  Marvellvht as 11n] ~~~~~
+
+2023-07-24 10:45:31.395 - INFO - marvellvht (192.168.250.63:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-24 10:45:32.394 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceID,mlan0
+
+2023-07-24 10:45:32.410 - INFO - marvellvht (192.168.250.63:9000) ---> sta_set_11n,interface,mlan0,reset_default,11n
+2023-07-24 10:45:33.424 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:33.424 - INFO - 
+        ~~~~~ [ Resetting 11n AP 1 Atheros11n] ~~~~~
+
+2023-07-24 10:45:33.424 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_reset_default,NAME,Atheros11n,program,11n,type,Testbed
+2023-07-24 10:45:33.440 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:33.440 - INFO - 
+        ~~~~~ [ Resetting 11n AP 2 Broadcom6715] ~~~~~
+
+2023-07-24 10:45:33.440 - INFO - 
+        ~~~~~ [ Resetting 11n AP 3 Ralink] ~~~~~
+
+2023-07-24 10:45:33.440 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> PowerSwitch,RalinkAP,IPAddress,192.165.100.38,UserName,,Password,,HostName,,PowerSwitchPort,1
+2023-07-24 10:45:33.454 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Access Point Added
+
+2023-07-24 10:45:33.454 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_reset_default,NAME,Ralink,program,11n,type,Testbed
+2023-07-24 10:45:36.496 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-24 10:45:36.496 - INFO - 
+        ~~~~~ Radio Off ~~~~~
+
+2023-07-24 10:45:36.496 - INFO - Atheros11n (192.165.100.39:9000) ---> ap_set_wireless,NAME,Atheros11n,radio,off
+2023-07-24 10:45:37.292 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE
+
+2023-07-24 10:45:37.292 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) ---> ap_set_wireless,NAME,Ralink,radio,off
+2023-07-24 10:45:38.322 - INFO - AP_CONFIG_AGENT (127.0.0.1:7000) <-- status,COMPLETE,Success
+
+2023-07-24 10:45:38.322 - INFO - DUT (192.165.100.13:9000) ---> ca_get_version
+2023-07-24 10:45:38.555 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,version,Sigma-CAPI-10.12.0-06.01.00.1716
+
+2023-07-24 10:45:38.572 - INFO - DUT (192.165.100.13:9000) ---> device_get_info
+2023-07-24 10:45:38.805 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE,vendor,MxL,model,WAV700_AP,version,06.01.00.1716
+
+2023-07-24 10:45:38.946 - INFO - 
+        ~~~~~ [ Getting TB STA Version Info ] ~~~~~
+
+2023-07-24 10:45:38.946 - INFO - realtek11n (192.168.250.93:9000) ---> ca_get_version
+2023-07-24 10:45:41.084 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,version,WIN7_WIN8_DUT-v9.1.0
+
+2023-07-24 10:45:41.084 - INFO - realtek11n (192.168.250.93:9000) ---> device_get_info
+2023-07-24 10:45:50.349 - INFO - realtek11n (192.168.250.93:9000) <-- status,COMPLETE,vendor,Realtek,model,RTL8812BU,version,10.9.1222.2016
+
+2023-07-24 10:45:50.943 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-24 10:45:51.161 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-24 10:45:51.161 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-24 10:45:51.473 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-24 10:45:51.940 - INFO - marvellvht (192.168.250.63:9000) ---> ca_get_version
+2023-07-24 10:45:52.940 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,version,11N(20:56:54 Jun 23 2020)
+
+2023-07-24 10:45:52.940 - INFO - marvellvht (192.168.250.63:9000) ---> device_get_info
+2023-07-24 10:46:15.450 - INFO - marvellvht (192.168.250.63:9000) <-- status,COMPLETE,vendor,NXP,model,RD-88W-8997-WIFI-S0 (PCIe8997),version,Sigma 11N 1.05a
+
+2023-07-24 10:46:16.012 - INFO - ax210l (192.168.250.73:9000) ---> ca_get_version
+2023-07-24 10:46:16.230 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,Version,WTS-1.0.15-6r2
+
+2023-07-24 10:46:16.230 - INFO - ax210l (192.168.250.73:9000) ---> device_get_info
+2023-07-24 10:46:16.619 - INFO - ax210l (192.168.250.73:9000) <-- status,COMPLETE,vendor,Intel,model,27254020L,version,Linux_Core_build_19147:211d325039d6-65.1eed1396.0
+
+2023-07-24 10:46:17.181 - INFO - 
+        ~~~~~ [ Getting TB AP Version Info ] ~~~~~
+
+2023-07-24 10:46:17.181 - INFO - Atheros11n (192.165.100.39:9000) ---> ca_get_version
+2023-07-24 10:46:17.181 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,version,1.0
+
+2023-07-24 10:46:17.197 - INFO - Atheros11n (192.165.100.39:9000) ---> device_get_info
+2023-07-24 10:46:17.229 - INFO - Atheros11n (192.165.100.39:9000) <-- status,COMPLETE,vendor,Qualcomm,model,IPQ8065,version,IPQ8064.ILQ.3.2.r3-0000000XX-P-1
+
+2023-07-24 10:46:17.727 - INFO - Ralink (127.0.0.1:7000) ---> ca_get_version
+2023-07-24 10:46:17.743 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,Wi-Fi Test Suite-10.0.0_beta
+
+2023-07-24 10:46:17.743 - INFO - Ralink (127.0.0.1:7000) ---> device_get_info,NAME,Ralink
+2023-07-24 10:46:17.743 - INFO - Ralink (127.0.0.1:7000) <-- status,COMPLETE,vendor,Mediatek,model,MT7615_R2TBV2,version,1.3.5.9
+
+2023-07-24 10:46:18.321 - INFO - 
+        ~~~~~ Sniffer device information ~~~~~
+
+2023-07-24 10:46:18.321 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_get_info
+2023-07-24 10:46:19.023 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+2023-07-24 10:46:19.038 - INFO - echo ~~~~ $latestMapConfVersion = MapConfig_N-v1.0 ~~~~
+2023-07-24 10:46:19.038 - INFO - 
+        ~~~~~ Sniffer map.conf file up-to-date ~~~~~
+
+2023-07-24 10:46:19.038 - INFO - echo ~~~~ $latestWfaSnifferVersion = Wi-FiTestSuite_v10.20.2-11n-v1.0 ~~~~
+2023-07-24 10:46:19.038 - INFO - 
+        ~~~~~ WFA sniffer agent up-to-date ~~~~~
+
+2023-07-24 10:46:19.053 - INFO - echo ~~~~ $latestWiresharkVersion = 3.4.8-2dc33a2-WFA-01 ~~~~
+2023-07-24 10:46:19.053 - INFO - 
+        ~~~~~ Wireshark/Tshark up-to-date ~~~~~
+
+2023-07-24 10:46:19.053 - INFO - echo ~~~~ $latestSnifferDriverVersion = 69EF989827E03C5DF96D6E9 ~~~~
+2023-07-24 10:46:19.069 - INFO - 
+        ~~~~~ Sniffer driver up-to-date ~~~~~
+
+2023-07-24 10:46:19.069 - INFO - echo ~~~~ $latestSnifferFirmwareVersion = 59.98ef5ee8.0 ~~~~
+2023-07-24 10:46:19.069 - INFO - 
+        ~~~~~ Sniffer firmware up-to-date ~~~~~
+
+2023-07-24 10:46:19.085 - INFO - 
+        ~~~~~ UCC: Processing PowerOnOffAPs.txt file ~~~~~
+
+2023-07-24 10:46:19.085 - INFO - 
+        ~~~~~ UCC: Processing APUT-4.2.36.txt file ~~~~~
+
+2023-07-24 10:46:19.085 - INFO - 
+        ~~~~~ [Configuring APUT] ~~~~~
+
+2023-07-24 10:46:19.101 - INFO - DUT (192.165.100.13:9000) ---> ap_set_wireless,NAME,Maxlinear,CHANNEL,36,width,40,SSID,ROQP96'us,MODE,11na,RTS,2347,FRGMNT,2346
+2023-07-24 10:46:19.943 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:19.943 - INFO - DUT (192.165.100.13:9000) ---> ap_set_security,NAME,Maxlinear,KEYMGNT,WPA2-PSK,PSK,ROQP96'us
+2023-07-24 10:46:20.380 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:20.380 - INFO - DUT (192.165.100.13:9000) ---> ap_set_wireless,NAME,Maxlinear,mcs_32,enable
+2023-07-24 10:46:20.676 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:20.676 - INFO - DUT (192.165.100.13:9000) ---> ap_config_commit,NAME,Maxlinear
+2023-07-24 10:46:35.637 - INFO - DUT (192.165.100.13:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:35.637 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_start,filename,4.2.36,bandwidth,40,channel,36
+2023-07-24 10:46:35.855 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE
+
+2023-07-24 10:46:35.855 - INFO - 
+        ~~~~~ UCC: Processing STA-4.2.36.txt file ~~~~~
+
+2023-07-24 10:46:35.855 - INFO - 
+        ~~~~~ [ Configuring Testbed STA(s) ] ~~~~~
+
+2023-07-24 10:46:35.855 - INFO - broadcomvht (192.168.250.43:9000) ---> ca_get_version
+2023-07-24 10:46:36.073 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,version,1.139.1
+
+2023-07-24 10:46:36.073 - INFO - broadcomvht (192.168.250.43:9000) ---> device_get_info
+2023-07-24 10:46:36.369 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendor,Broadcom,model,4360MCB,version,6.30.190.17
+
+2023-07-24 10:46:36.915 - INFO - broadcomvht (192.168.250.43:9000) ---> device_list_interfaces,interfaceType,802.11
+2023-07-24 10:46:37.150 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,interfaceType,802.11,interfaceId,eth0
+
+2023-07-24 10:46:37.150 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_preset_testparameters,interface,eth0,supplicant,WPA_Supplicant,mode,11na,RTS,2347,FRGMNT,2346,preamble,long,powersave,off,wmm,on,HT,off
+2023-07-24 10:46:43.467 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:43.467 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_info,interface,eth0
+2023-07-24 10:46:43.717 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,vendorInfo_1,Broadcom,vendorInfo_2,4360
+
+2023-07-24 10:46:43.717 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,width,40
+2023-07-24 10:46:43.921 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:43.921 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,ampdu,disable
+2023-07-24 10:46:44.122 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:44.122 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,amsdu,disable
+2023-07-24 10:46:44.420 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:44.420 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,addba_reject,enable
+2023-07-24 10:46:44.622 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:44.622 - INFO - Sleep... 5 seconds
+2023-07-24 10:46:49.630 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_11n,interface,eth0,mcs32,enable
+2023-07-24 10:46:49.832 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:49.832 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_psk,interface,eth0,ssid,ROQP96'us,passphrase,ROQP96'us,encpType,aes-ccmp,keymgmttype,wpa2
+2023-07-24 10:46:52.858 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:52.858 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_set_ip_config,interface,eth0,dhcp,0,ip,192.165.100.43,mask,255.255.0.0
+2023-07-24 10:46:53.092 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:46:53.092 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_associate,interface,eth0,ssid,ROQP96'us
+2023-07-24 10:47:02.125 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:47:12.141 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_is_connected,interface,eth0
+2023-07-24 10:47:12.344 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,connected,1
+
+2023-07-24 10:47:12.344 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_bssid,interface,eth0
+2023-07-24 10:47:12.562 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,bssid,02:E0:92:00:01:41
+
+2023-07-24 10:47:12.562 - INFO - broadcomvht (192.168.250.43:9000) ---> sta_get_ip_config,interface,eth0
+2023-07-24 10:47:12.780 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,dhcp,0,ip,192.165.100.43,netmask,255.255.0.0,dns,0.0.0.0
+
+2023-07-24 10:47:12.780 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-24 10:47:13.779 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:47:13.779 - INFO - Sleep... 10 seconds
+2023-07-24 10:47:23.793 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,1000,frameRate,1,duration,10
+2023-07-24 10:47:24.808 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,1
+
+2023-07-24 10:47:24.808 - INFO - Sleep... 10 seconds
+2023-07-24 10:47:34.822 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,1
+2023-07-24 10:47:37.881 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,10,replies,10,consectimeout,0
+
+2023-07-24 10:47:37.881 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_agent_reset
+2023-07-24 10:47:38.894 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE
+
+2023-07-24 10:47:38.894 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_send_ping,destination,192.165.100.50,framesize,10000,frameRate,1,duration,60
+2023-07-24 10:47:39.908 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,streamID,2
+
+2023-07-24 10:47:39.924 - INFO - Sleep... 60 seconds
+2023-07-24 10:48:39.937 - INFO - broadcomvht (192.168.250.43:9000) ---> traffic_stop_ping,streamID,2
+2023-07-24 10:48:43.073 - INFO - broadcomvht (192.168.250.43:9000) <-- status,COMPLETE,sent,60,replies,60,consectimeout,0
+
+2023-07-24 10:48:47.098 - INFO - SNIFFER (192.168.250.19:9999) ---> sniffer_control_stop
+2023-07-24 10:48:47.301 - INFO - SNIFFER (192.168.250.19:9999) <-- status,COMPLETE
+
+2023-07-24 10:48:47.301 - INFO - 
+    FINAL TEST RESULT  --->            PASS
+2023-07-24 10:48:47.301 - INFO -      END: TEST CASE [N-4.2.36]
+2023-07-24 10:48:47.660 - INFO - PASS
+2023-07-24 10:48:47.660 - INFO - Execution Time [222.57] seconds
+2023-07-24 10:48:47.676 - INFO - ---------------------------------------
+2023-07-24 10:48:47.676 - INFO - Performing Post Test Execution Procedure in PostTestExec.txt file
+2023-07-24 10:48:47.676 - INFO - PostTestExec.txt file does not exist
+2023-07-24 10:48:47.676 - INFO - Stopping FTP server

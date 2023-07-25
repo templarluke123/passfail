@@ -1,0 +1,19 @@
+SNIFFER CHECKS LOG - Testcase: N-4.2.29_PSK_3SS 
+
+
+Jul:21:2023-16:31:27 | SNIFFER ---> sniffer_get_info, 
+Jul:21:2023-16:31:28 | SNIFFER <-- status,COMPLETE,WfaSnifferVersion,Wi-FiTestSuite_v10.20.2-11n-v1.0,SnifferDvSTA,69EF989827E03C5DF96D6E9,SnifferFwSTA,59.98ef5ee8.0,SwInfo,DeviceSwInfo_5.4.0-42-generic,WiresharkVersion,3.4.8-2dc33a2-WFA-01,MapConfVersion,MapConfig_N-v1.0
+
+ 
+Jul:21:2023-16:32:33 | SNIFFER ---> sniffer_control_start,filename,4.2.29_sniffer,bandwidth,20,channel,36 
+Jul:21:2023-16:32:34 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-16:33:23 | SNIFFER ---> sniffer_control_stop, 
+Jul:21:2023-16:33:23 | SNIFFER <-- status,COMPLETE
+
+ 
+Jul:21:2023-16:33:23 | SNIFFER ---> sniffer_frame_check,name,wireShark_wlan,filename,4.2.29_sniffer,Rxmac,00:90:4c:0d:d1:85,Txmac,02:e0:92:00:01:41,framename,BA,Present,Yes 
+Jul:21:2023-16:33:49 | SNIFFER <-- status,COMPLETE,CheckResult,SUCCESS
+
+ 

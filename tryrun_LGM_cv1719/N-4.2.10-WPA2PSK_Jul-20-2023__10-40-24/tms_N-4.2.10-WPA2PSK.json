@@ -1,0 +1,33 @@
+{
+    "TmsTestResult": {
+        "PrimaryTestbed": {
+            "Category": "STA", 
+            "VendorDeviceId": "Broadcom_4360MCB", 
+            "company": "Broadcom", 
+            "firmware": "6.30.190.17", 
+            "model": "4360MCB"
+        }, 
+        "TestResult": {
+            "Device": "DUT", 
+            "Message": "OK", 
+            "Result": "PASS"
+        }, 
+        "ExecutionTimeInSeconds": "0", 
+        "TimeStamp": "2023-07-20T10-50-00Z+08:00", 
+        "TmsEventId": "XXXXX", 
+        "LogFileName": "ftp://wfaftp.tms.wi-fi.org/XXXXX/MxL_AX11000/Broadcom_4360MCB/N-4.2.10-WPA2PSK/2023-07-20T10-50-00Z", 
+        "TestCaseId": "N-4.2.10-WPA2PSK", 
+        "Mode": "Sigma", 
+        "ProgramName": "N", 
+        "PrimaryTestbedParticipantName": "TestbedCompanyName", 
+        "Dut": {
+            "Category": "AP", 
+            "VendorDeviceId": "MxL_AX11000", 
+            "company": "MxL", 
+            "firmware": "06.01.00.1719", 
+            "model": "AX11000"
+        }, 
+        "TMSversion": "2.0", 
+        "DutParticipantName": "DUTCompanyName"
+    }
+}
